@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  
+  
+    <siteMapNode url="~/Modules/Projects/ClientProjects.aspx" title="Home" description="Home">
+        <!-- Projects -->
+        <siteMapNode url="~/Modules/Projects/ClientProjectDetails.aspx" title="Project Summary" description="Projects" resourceKey="Projects">
+          <!--<siteMapNode url="~/Modules/Projects/ListRFIs.aspx" title="RFIs" description="RFIs" resourceKey="Projects" />-->
+         
+          <siteMapNode url="~/Modules/Projects/ListClaims.aspx" title="Claims" description="Claims" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/ListClientVariations.aspx" title="Client Variations" description="ClientVariations" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/ListDrawingsTransmittals.aspx" title="Docs" description="Docs/Drawings" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/Photogallery.aspx" title="Gallery" description="Gallery" resourceKey="Projects" />
+         
+          <siteMapNode url="~/Modules/People/ViewEmployee.aspx.aspx" title="Staff" description="Staff" resourceKey="Projects" />
+
+          <!-- RFIs -->
+          <siteMapNode url="~/Modules/Projects/ListRFIs.aspx" title="RFIs" description="RFIs" resourceKey="Projects" >
+            <siteMapNode url="~/Modules/Projects/ViewRFI.aspx" title="RFI" description="RFI" resourceKey="Projects" />
+            <siteMapNode url="~/Modules/Projects/ReplyRFI.aspx" title="RFI" description="RFI" resourceKey="Projects" />
+            <siteMapNode url="~/Modules/Projects/ReportRFIs.aspx" title="RFI Summary" description="RFI Summary" resourceKey="Projects" />
+          </siteMapNode>
+
+          <!-- EOTs -->
+          <siteMapNode url="~/Modules/Projects/ListEOTs.aspx" title="EOTs" description="EOTs" resourceKey="Projects" >
+            <siteMapNode url="~/Modules/Projects/ViewEOT.aspx" title="EOT" description="EOT" resourceKey="Projects" />
+           
+          </siteMapNode>
+
+
+          <!-- Meeting Minutes -->
+          <siteMapNode url="~/Modules/Projects/ListMeetingMinutes.aspx" title="Meeting Minutes" description="MeetingMinutes" resourceKey="Projects" >
+            <siteMapNode url="~/Modules/Projects/ViewMeetingMinutes.aspx" title="Meeting Minutes" description="MeetingMinutes" resourceKey="Projects" />
+
+          </siteMapNode>
+
+
+
+          <!-- Staff -->
+          
+            <siteMapNode url="~/Modules/People/ViewEmployee.aspx" title="Staff Member" description="Staff Member" resourceKey="Projects">
+                </siteMapNode>
+          
+          
+          
+          <!--<siteMapNode url="~/Modules/Projects/ViewParticipationSubContractor.aspx" title="Project" description="Project" resourceKey="Projects">
+                <siteMapNode url="~/Modules/Projects/EditParticipation.aspx" title="Quote" description="Quote" resourceKey="Projects" />
+                <siteMapNode url="~/Modules/Projects/EditParticipationItem.aspx" title="Quote item" description="Quote item" resourceKey="Projects" />
+                <siteMapNode url="~/Modules/Projects/UploadQuoteFile.aspx" title="Quote file" description="Quote file" resourceKey="Projects" />
+            </siteMapNode>-->
+            <siteMapNode url="~/Modules/Core/ChangePassword.aspx" title="User Info" description="User Info" />
+        </siteMapNode>
+
+        <!-- Help -->
+        <siteMapNode url="~/Modules/Help/Help.aspx" title="Help" description="Help" resourceKey="Help"/>
+    </siteMapNode>
+</siteMap>

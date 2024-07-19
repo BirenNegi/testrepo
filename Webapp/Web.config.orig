@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<configuration>
+  <!--#-->
+  <connectionStrings>
+<<<<<<< HEAD
+    <add name="SOSTestConnectionString" connectionString="Data Source=IMX700\SQLEXPRESS;Integrated Security=False;User ID=legend;Password=Quest02@;Initial Catalog=SOS; Pooling=false" providerName="System.Data.SqlClient"/>
+  </connectionStrings>
+  <!--#-->
+  <appSettings>
+    <add key="ConnectionString" value="Data Source=IMX700\SQLEXPRESS;Integrated Security=False;User ID=legend;Password=Quest02@;Initial Catalog=SOS;Pooling=true;Connect Timeout=3000;"/>
+    <!--SOSTest_Pro__    V@ugh@ns-!Pr0j3ctS0S     -->
+    <add key="BaseUrl" value="http://vc-sos-03:8081"/>
+=======
+    <add name="SOSTestConnectionString" connectionString="Data Source=VC-SQL-02;Initial Catalog=SOSTest_Pro;User ID=SOSApp;Password=V@ugh@ns; Pooling=false"
+      providerName="System.Data.SqlClient" />
+    <add name="SOSTest_ProConnectionString" connectionString="Data Source=VC-SQL-02;Initial Catalog=SOSTest_Pro;Integrated Security=True"
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <!--#-->
+  <appSettings>
+    <add key="ConnectionString" value="Server=VC-SQL-02;Database=SOS;uid=SOSApp;pwd=V@ugh@ns;Pooling=true;Connect Timeout=3000;"/>    <!--SOSTest_Pro__    V@ugh@ns-!Pr0j3ctS0S     -->
+    <add key="BaseUrl" value="http://vc-sos-03:8080"/>
+>>>>>>> updates
+    <add key="SubcontractorUrl" value="https://sos.vaughans.com.au"/>
+    <add key="DefaultMedia" value="A4"/>
+    <add key="EmailSmtpServer" value="172.26.75.11"/>
+    <!-- 192.168.1.105"-->
+    <add key="EmailFrom" value="sos@vaughans.com.au"/>
+    <add key="EmailAccounts" value="accounts1@vaughans.com.au"/>
+    <add key="EmailFax" value="mailbox@vaughans.com.au"/>
+    <add key="EmailRedirect" value="santosh.Nayak@vaughans.com.au"/>
+    <add key="EmailMaxSize" value="10485760"/>
+<<<<<<< HEAD
+    <add key="DocumentsFolder" value="\\vc-exchange-03.vaughans.com.au\Jobs"/>
+    <!--"\\vc-exchange-03.vaughans.com.au\Jobs"-->
+=======
+    
+    <add key="DocumentsFolder" value="\\vaughans.com.au\dfs\Jobs"/>    <!--"\\vc-exchange-03.vaughans.com.au\Jobs"-->
+    
+>>>>>>> updates
+    <add key="QuotesFilesFolder" value="QuotesFiles"/>
+    <add key="SiteOrdersFolder" value="E:\SOS\SiteOrders\Docs\"/>
+    <add key="DeepZoomCode" value="Remote"/>
+    <add key="SubcontractorsPrequalificationForm" value="\\vc-exchange-03.vaughans.com.au\Construction\Subcontractors\PrequalificationForms"/>
+    <!--San- from ClientSos.vaughans.com.au\RFIresponse folder -->
+    <add key="RFIsResponseFolder" value="\RFIsResponse"/>
+    <!--#-->
+    <!--#-->
+	  <add key="SubcontractorsQualifications" value="SOS-IT\\SubcontractorsQualifications"/>
+	  <add key="ABNRegistrationGUID" value="5ba31bf1-d423-4d54-881f-1ebe32b0c190"/>
+
+	  <!--#-->
+  </appSettings>
+  <!--
+    For a description of web.config changes see http://go.microsoft.com/fwlink/?LinkId=235367.
+
+    The following attributes can be set on the <httpRuntime> tag.
+      <system.Web>
+        <httpRuntime targetFramework="4.8" />
+      </system.Web>
+  -->
+  <system.web>
+    <!--#-->
+    <httpRuntime maxRequestLength="1048576" executionTimeout="360000" requestValidationMode="2.0"/>
+    <!--#-->
+    <!-- Show detail errors. Comment out in production -->
+    <httpHandlers>
+      <add path="Reserved.ReportViewerWebControl.axd" verb="*" type="Microsoft.Reporting.WebForms.HttpHandler, Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" validate="false"/>
+    </httpHandlers>
+    <customErrors mode="Off"/>
+    <!-- Change to debug="false" for production -->
+    <compilation debug="true" targetFramework="4.8">
+      <buildProviders>
+        <add extension=".rdlc" type="Microsoft.Reporting.RdlBuildProvider, Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"/>
+      </buildProviders>
+      <assemblies>
+        <add assembly="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91"/>
+        <add assembly="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91"/>
+        <add assembly="Microsoft.Build.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+      </assemblies>
+    </compilation>
+    <sessionState mode="InProc" timeout="120"/>
+    <pages enableEventValidation="false">
+      <controls>
+        <add tagPrefix="act" namespace="AjaxControlToolkit" assembly="AjaxControlToolkit"/>
+        <!-- San  <add tagPrefix="rsweb" namespace="Microsoft.Reporting.WebForms" assembly="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91, processorArchitecture=MSIL" />-->
+        <add tagPrefix="rsweb" namespace="Microsoft.Reporting.WebForms" assembly="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91, processorArchitecture=MSIL"/>
+        <add tagPrefix="sos" tagName="TitleBar" src="~/Modules/Core/Controls/TitleBar.ascx"/>
+        <add tagPrefix="sos" tagName="ErrorMessage" src="~/Modules/Core/Controls/ErrorMessage.ascx"/>
+        <add tagPrefix="sos" tagName="MainMenu" src="~/Modules/Core/Controls/MainMenu.ascx"/>
+        <add tagPrefix="sos" tagName="BooleanViewer" src="~/Modules/Core/Controls/BooleanViewer.ascx"/>
+        <add tagPrefix="sos" tagName="BooleanReader" src="~/Modules/Core/Controls/BooleanReader.ascx"/>
+        <add tagPrefix="sos" tagName="DateReader" src="~/Modules/Core/Controls/DateReader.ascx"/>
+        <add tagPrefix="sos" tagName="FileLabel" src="~/Modules/Core/Controls/FileLabel.ascx"/>
+        <add tagPrefix="sos" tagName="FileLink" src="~/Modules/Core/Controls/FileLink.ascx"/>
+        <add tagPrefix="sos" tagName="FileSelect" src="~/Modules/Core/Controls/FileSelect.ascx"/>
+        <add tagPrefix="sos" tagName="ComboAndTextReader" src="~/Modules/Core/Controls/ComboAndTextReader.ascx"/>
+        <add tagPrefix="sos" tagName="CheckComparison" src="~/Modules/Projects/Controls/ComparisonCheck.ascx"/>
+        <add tagPrefix="sos" tagName="ViewComparison" src="~/Modules/Projects/Controls/ComparisonView.ascx"/>
+        <add tagPrefix="sos" tagName="EditComparison" src="~/Modules/Projects/Controls/ComparisonEdit.ascx"/>
+        <add tagPrefix="sos" tagName="ViewQuoteDrawings" src="~/Modules/Projects/Controls/QuoteDrawingsView.ascx"/>
+        <add tagPrefix="sos" tagName="ProcessManager" src="~/Modules/Projects/Controls/ProcessManager.ascx"/>
+        <add tagPrefix="sos" tagName="FilterSelector" src="~/Modules/Projects/Controls/FilterSelector.ascx"/>
+        <add tagPrefix="sos" tagName="TradeBudget" src="~/Modules/Projects/Controls/TradeBudget.ascx"/>
+        <add tagPrefix="sos" tagName="BalanceInclude" src="~/Modules/Projects/Controls/Controls/BalanceInclude.ascx"/>
+      </controls>
+    </pages>
+    <globalization culture="en-AU" uiCulture="en"/>
+    <identity impersonate="true"/>
+  </system.web>
+  <system.webServer>
+    <handlers>
+      <!--San  <add name="ReportViewerWebControlHandler" preCondition="integratedMode" verb="*" path="Reserved.ReportViewerWebControl.axd" type="Microsoft.Reporting.WebForms.HttpHandler, Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91, processorArchitecture=MSIL" />-->
+      <add name="ReportViewerWebControlHandler" preCondition="integratedMode" verb="*" path="Reserved.ReportViewerWebControl.axd" type="Microsoft.Reporting.WebForms.HttpHandler, Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"/>
+    </handlers>
+    <validation validateIntegratedModeConfiguration="false"/>
+    <!--#-->
+    <security>
+      <requestFiltering>
+        <requestLimits maxAllowedContentLength="1073741824"/>
+      </requestFiltering>
+    </security>
+    <!--#-->
+    <!--San to run  MP4 Training Videos-->
+    <!--<staticContent>
+      <mimeMap fileExtension=".mp4" mimeType="video/mp4" />
+      <mimeMap fileExtension=".m4v" mimeType="video/m4v" />
+    </staticContent>-->
+    <!--San to run Training Videos-->
+  </system.webServer>
+  <!-- To configure timeouts -->
+  <!--<system.transactions>
+    <machineSettings maxTimeout="00:05:00" />
+  </system.transactions>-->
+  <!--<system.web>
+    <httpRuntime executionTimeout="300" />
+  </system.web>-->
+  <!--  #-->
+  <system.serviceModel>
+<<<<<<< HEAD
+    <client>
+      <endpoint address="http://VC-SOS-02:8080/FileTransferService.svc" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IFileTransferService" contract="IFileTransferService" name="FileTransferService"/>
+    </client>
+=======
+    
+    <!--<client>
+         <endpoint address="http://192.168.1.139:8080/FileTransferService.svc" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IFileTransferService" contract="IFileTransferService" name="FileTransferService" />
+    
+    --><!--http://VC-SOS-03:8080/FileTransferService.svc--><!--
+    </client>-->
+   
+     <client>
+         <endpoint address="http://VC-SOS-03:8080/FileTransferService.svc" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IFileTransferService" contract="IFileTransferService" name="FileTransferService" />
+    </client>
+      
+        
+>>>>>>> updates
+    <bindings>
+      <basicHttpBinding>
+        <binding name="BasicHttpBinding_IFileTransferService" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:10:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferSize="67108864" maxBufferPoolSize="67108864" maxReceivedMessageSize="67108864" messageEncoding="Mtom" textEncoding="utf-8" transferMode="Streamed" useDefaultWebProxy="true">
+          <readerQuotas maxDepth="67108864" maxStringContentLength="67108864" maxArrayLength="67108864" maxBytesPerRead="67108864" maxNameTableCharCount="67108864"/>
+          <security mode="None">
+            <transport clientCredentialType="None" proxyCredentialType="None" realm=""/>
+            <message clientCredentialType="UserName" algorithmSuite="Default"/>
+          </security>
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+  </system.serviceModel>
+  <!--  #-->
+</configuration>

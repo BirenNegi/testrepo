@@ -1,0 +1,17 @@
+﻿Please find attached an order from Vaughan Constructions.<br /><br />
+Project: <b>$PROJECTNAME$</b><br />Order: <b>$PROJECTTITLE$</b><br />
+Foreman: <b>$FORMANNAME$</b><br />
+Subcontractor: <b>$SUBCONTRACTORNAME$</b><br />
+Date/Time: <b>$ORDERDATE$</b><br />
+Order amount: <b>$SUBTOTAL$</b><br />
+Order Status: <b>$ORDERSTATUS$</b><br /><br />
+
+
+If you are invoicing for these works, please ensure you reference the <u>order number and project name</u> on your invoice. All invoices must be emailed to accountspayable@vaughans.com.au<br /><br />
+
+If you have any questions regarding this order please contact the Vaughan Constructions’ project team.<br /><br />
+
+Do not reply to this email.<br /><br />
+
+Vaughan Constructions<br /><br />
+

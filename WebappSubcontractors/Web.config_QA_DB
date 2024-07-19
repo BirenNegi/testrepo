@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <add key="ConnectionString" value="Server=VC-SQL-02;Database=SOS;uid=SOSApp;pwd=V@ugh@ns;" />
+    <add key="BaseUrl" value="http://localhost:1182" />
+    <add key="SubcontractorUrl" value="https://sos.vaughans.com.au"/> <!--San   Test_Pro-->
+    <add key="SubcontractorsQualifications" value="SOS-IT\\SubcontractorsQualifications"/>    <!--!Pr0j3ctS0S-->
+    
+    <add key="DefaultMedia" value="A4" />
+    <add key="EmailSmtpServer" value="172.26.75.11"  />         <!-- 192.168.1.105" -->
+    <add key="EmailFrom" value="Administrator@sos.loc" />
+    <add key="EmailRedirect" value="santosh.Nayak@vaughans.com.au" />
+    <add key="EmailSupport" value="santosh.Nayak@vaughans.com.au" />
+    <add key="QuotesFilesFolder" value="QuotesFiles" />
+  </appSettings>
+  <!--
+    For a description of web.config changes see http://go.microsoft.com/fwlink/?LinkId=235367.
+
+    The following attributes can be set on the <httpRuntime> tag.
+      <system.Web>
+        <httpRuntime targetFramework="4.5" />
+      </system.Web>
+  -->
+  <system.web>
+    <!-- Show detail errors. Comment out in production -->
+    <customErrors mode="Off" />
+    <!-- Change to debug="false" for production -->
+    <compilation debug="true" targetFramework="4.5">
+      <assemblies />
+    </compilation>
+    <sessionState mode="InProc" />
+    <pages enableEventValidation="false" controlRenderingCompatibilityVersion="4.0">
+      <controls>
+        <add tagPrefix="act" namespace="AjaxControlToolkit" assembly="AjaxControlToolkit" />
+        <!--San <add tagPrefix="rsweb" namespace="Microsoft.Reporting.WebForms" assembly="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91" />
+        -->
+        <add tagPrefix="rsweb" namespace="Microsoft.Reporting.WebForms" assembly="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91, processorArchitecture=MSIL" />
+        <add tagPrefix="sos" tagName="TitleBar" src="~/Modules/Core/Controls/TitleBar.ascx" />
+        <add tagPrefix="sos" tagName="ErrorMessage" src="~/Modules/Core/Controls/ErrorMessage.ascx" />
+        <add tagPrefix="sos" tagName="MainMenu" src="~/Modules/Core/Controls/MainMenu.ascx" />
+        <add tagPrefix="sos" tagName="BooleanViewer" src="~/Modules/Core/Controls/BooleanViewer.ascx" />
+        <add tagPrefix="sos" tagName="BooleanReader" src="~/Modules/Core/Controls/BooleanReader.ascx" />
+        <add tagPrefix="sos" tagName="FileLabel" src="~/Modules/Core/Controls/FileLabel.ascx" />
+        <add tagPrefix="sos" tagName="FileLink" src="~/Modules/Core/Controls/FileLink.ascx" />
+        <add tagPrefix="sos" tagName="FileSelect" src="~/Modules/Core/Controls/FileSelect.ascx" />
+        <add tagPrefix="sos" tagName="GridPageSize" src="~/Modules/Core/Controls/GridPageSize.ascx" />
+        <add tagPrefix="sos" tagName="CheckComparison" src="~/Modules/Projects/Controls/ComparisonCheck.ascx" />
+        <add tagPrefix="sos" tagName="ViewComparison" src="~/Modules/Projects/Controls/ComparisonView.ascx" />
+        <add tagPrefix="sos" tagName="EditComparison" src="~/Modules/Projects/Controls/ComparisonEdit.ascx" />
+        <add tagPrefix="sos" tagName="ViewQuoteDrawings" src="~/Modules/Projects/Controls/QuoteDrawingsView.ascx" />
+        <add tagPrefix="ajaxToolkit" assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" />
+        <!--#-->
+       <add tagPrefix="sos" tagName="DateReader" src="~/Modules/Core/Controls/DateReader.ascx"/> <!---->
+        
+      </controls>
+    </pages>
+    <globalization culture="en-AU" uiCulture="en" />
+    <!-- Comment this out in IIS 7 if Integrated mode is used
+    <httpHandlers>
+      <add verb="*" path="Reserved.ReportViewerWebControl.axd" type="Microsoft.Reporting.WebForms.HttpHandler, Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91" />
+    </httpHandlers>
+     -->
+  </system.web>
+  <system.webServer>
+    <!-- Add this section in IIS 7 Integrated mode -->
+    <handlers>
+      <add name="ReportViewerWebControlHandler" preCondition="integratedMode" verb="*" path="Reserved.ReportViewerWebControl.axd" type="Microsoft.Reporting.WebForms.HttpHandler, Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91" />
+    </handlers>
+  </system.webServer>
+  
+  
+  <system.serviceModel>
+    <client>
+      <!--  San
+      
+      <endpoint address="http://SOSv2/FileTransferService/FileTransferService.svc" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IFileTransferService" contract="IFileTransferService" name="FileTransferService" />
+      -->
+      <endpoint address="http://VC-SOS-03:8080/FileTransferService.svc" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IFileTransferService" contract="IFileTransferService" name="FileTransferService" />
+    </client>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="BasicHttpBinding_IFileTransferService" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:10:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferSize="67108864" maxBufferPoolSize="67108864" maxReceivedMessageSize="67108864" messageEncoding="Mtom" textEncoding="utf-8" transferMode="Streamed" useDefaultWebProxy="true">
+          <readerQuotas maxDepth="67108864" maxStringContentLength="67108864" maxArrayLength="67108864" maxBytesPerRead="67108864" maxNameTableCharCount="67108864" />
+          <security mode="None">
+            <transport clientCredentialType="None" proxyCredentialType="None" realm="" />
+            <message clientCredentialType="UserName" algorithmSuite="Default" />
+          </security>
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+  </system.serviceModel>
+  
+  
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="ICSharpCode.SharpZipLib" publicKeyToken="1b03e6acf1164f73" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-0.86.0.518" newVersion="0.86.0.518" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  
+  
+</configuration>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode description="Home">
+        <!-- Projects -->
+        <siteMapNode url="~/Modules/Projects/SearchParticipationsSubContractor.aspx" title="Projects" description="Projects" resourceKey="Projects">
+            <siteMapNode url="~/Modules/Projects/ViewParticipationSubContractor.aspx" title="Project" description="Project" resourceKey="Projects">
+                <siteMapNode url="~/Modules/Projects/EditParticipation.aspx" title="Quote" description="Quote" resourceKey="Projects" />
+                <siteMapNode url="~/Modules/Projects/EditParticipationItem.aspx" title="Quote item" description="Quote item" resourceKey="Projects" />
+                <siteMapNode url="~/Modules/Projects/UploadQuoteFile.aspx" title="Quote file" description="Quote file" resourceKey="Projects" />
+            </siteMapNode>
+            <siteMapNode url="~/Modules/Core/ChangePassword.aspx" title="User Info" description="User Info" />
+        </siteMapNode>
+
+      <siteMapNode url="~/Modules/People/SearchContacts.aspx" title="Contacts" description="Contacts" resourceKey="Subcontractors">
+        <siteMapNode url="~/Modules/People/ViewContact.aspx" title="Contact" description="Contact" resourceKey="Subcontractors">
+          <siteMapNode url="~/Modules/People/CreateAccountContact.aspx" title="Access Account" description="Access Account" resourceKey="Subcontractors" />
+          <!--#-->
+          <siteMapNode url="~/Modules/SubContractors/EditSubcontractorQualifications.aspx" title="Subcontractor's Certificates/Qualifications" description="Subcontractor Qualifications" resourceKey="Subcontractors" />
+          <!--#-->
+
+        </siteMapNode>
+        <siteMapNode url="~/Modules/People/EditContact.aspx" title="Subcontractor Contact" description="Subcontractor Contact" resourceKey="Subcontractors" />
+        <siteMapNode url="~/Modules/People/EditSubcontractorQualifications.aspx" title="Certificates/Qualification" description="Certificates/Qualification" resourceKey="Subcontractors" />
+
+      </siteMapNode>
+        <!-- Help -->
+        <siteMapNode url="~/Modules/Help/Help.aspx" title="Help" description="Help" resourceKey="Help"/>
+    </siteMapNode>
+</siteMap>

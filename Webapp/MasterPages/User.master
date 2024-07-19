@@ -1,0 +1,136 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="SOS.Web.UserMasterPage" Codebehind="User.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <title>SOS</title>
+    <link href="../Config/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="Scripts" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body class="bodyNormal">
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="left">
+                    <table cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td rowspan="2" style="padding-left:4px; padding-top:4px; border-bottom:solid 1px #999999;"><img alt="Logo" src="../../Images/VaughanLogoSmall.gif" /></td>
+                            <td align="center"><img alt="Vaughan" src="../../Images/VaughanName.gif" /></td>
+                            <td align="center"><span style="font-size:16pt; color:#FF6666; text-shadow:#000000 1px; font-family:Verdana,Arial; font-weight:bold; white-space:nowrap;">SOS++</span></td>
+                        </tr>
+                        <tr>
+                            <td valign="bottom" align="left" colspan="2">
+                                <asp:Menu
+                                    ID="menuMain"
+                                    runat="server" 
+                                    RenderingMode="Table"
+                                    staticdisplaylevels="1"
+                                    Orientation="Horizontal"
+                                    StaticMenuItemStyle-ItemSpacing="0"
+                                    StaticEnableDefaultPopOutImage="true"
+                                    StaticTopSeparatorImageUrl="~/Images/LeftCorner.gif"
+                                    StaticBottomSeparatorImageUrl="~/Images/RightCorner.gif"
+                                    StaticMenuItemStyle-CssClass="mnuNormal" 
+                                    StaticHoverStyle-CssClass="mnuHover"
+                                    StaticSelectedStyle-CssClass="mnuSelected"
+                                    DynamicMenuItemStyle-CssClass="mnuDynamic"
+                                    DynamicMenuStyle-CssClass="mnuMain"
+                                    DynamicHoverStyle-CssClass="mnuHover">
+                                    <Items>
+                                        <asp:MenuItem Text="Projects" Value="Projects" NavigateUrl="~/Modules/Projects/SearchProjects.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="Staff" Value="Staff" NavigateUrl="~/Modules/People/SearchEmployees.aspx" />
+                                        <asp:MenuItem Text="Subcontractors" Value="Subcontractors" NavigateUrl="~/Modules/SubContractors/SearchSubContractors.aspx">
+                                            <asp:MenuItem Text="Contacts" Value="Contacts" NavigateUrl="~/Modules/People/SearchContacts.aspx"></asp:MenuItem>
+                                        </asp:MenuItem>
+                                        <asp:MenuItem Text="Reports" Value="Reports" NavigateUrl="~/Modules/Core/ListReports.aspx" />
+                                        <asp:MenuItem Text="Admin" Value="Admin">
+                                            <asp:MenuItem Text="Trade Templates" Value="Trade Templates" NavigateUrl="~/Modules/Trades/ListTradeTemplates.aspx"></asp:MenuItem>
+                                            <asp:MenuItem Text="Client Trade Types" Value="Client Trade Types" NavigateUrl="~/Modules/Trades/ListClientTradeTypes.aspx"></asp:MenuItem>
+                                            <asp:MenuItem Text="Contract Templates" Value="Contract Templates" NavigateUrl="~/Modules/Contracts/ListContractTemplates.aspx"></asp:MenuItem>
+                                            <%-- San 28/10/22--%>
+                                            
+                                                <%--<asp:MenuItem Text="Order Letting Minutes Template" Value="Minutes Template" NavigateUrl="~/Modules/Trades/ViewMinutesTemplate.aspx?MinutesTemplateId=1"></asp:MenuItem>--%>
+
+                                            <asp:MenuItem Text="Order Letting Minutes" Value="Order Letting Minutes"> 
+                                                <asp:MenuItem Text="Order Letting Minutes Template" Value="Minutes Template" NavigateUrl="~/Modules/Trades/ViewMinutesTemplate.aspx?MinutesTemplateId=5"></asp:MenuItem>
+                                                <asp:MenuItem Text=" QLD- Order Letting Minutes Template" Value="Minutes Template-QLD2" NavigateUrl="~/Modules/Trades/ViewMinutesTemplate.aspx?MinutesTemplateId=4"></asp:MenuItem>
+                                           </asp:MenuItem>
+                                             <%-- San 28/10/22--%>   
+                                                <asp:MenuItem Text="Invitation to Tender Template" Value="Invitation Template" NavigateUrl="~/Modules/Trades/ViewInvitationTemplate.aspx?InvitationTemplateId=1"></asp:MenuItem>
+                                            <asp:MenuItem Text="Business Units" Value="Business Units" NavigateUrl="~/Modules/Contracts/ListBusinessUnits.aspx"></asp:MenuItem>
+                                            <asp:MenuItem Text="Drawings Types" Value="Drawings Types" NavigateUrl="~/Modules/Trades/ListDrawingTypes.aspx"></asp:MenuItem>
+                                            <asp:MenuItem Text="Job Types" Value="Job Types" NavigateUrl="~/Modules/Contracts/ListJobTypes.aspx"></asp:MenuItem>
+                                            <asp:MenuItem Text="Holidays" Value="Holidays" NavigateUrl="~/Modules/Trades/ListHolidays.aspx"></asp:MenuItem>
+                                            <asp:MenuItem Text="RDOs" Value="RDOs" NavigateUrl="~/Modules/Trades/ListRDOs.aspx"></asp:MenuItem>
+                                            <%-- San --%>
+                                            <asp:MenuItem Text="Manage General Induction" Value="GI" NavigateUrl="~/Modules/Induction/GeneralInduction.aspx"></asp:MenuItem>
+                                            <asp:MenuItem Text="KPIRange" Value="KPIRange" NavigateUrl="~/Modules/Projects/KPIRangeEdit.aspx"></asp:MenuItem>
+                                            <asp:MenuItem Text="Manage Pending Task list" Value="ManagePendingTasklist" NavigateUrl="~/Modules/Projects/EditHomePagePendingTaskList.aspx"></asp:MenuItem>
+                                            <%-- San --%>
+                                        </asp:MenuItem>
+                                        <asp:MenuItem Text="Help" Value="Help" NavigateUrl="~/Modules/Help/Help.aspx" />
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="right" style="border-bottom:solid 1px #999999; width:100%; vertical-align:middle;">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td class="frmText" style="white-space:nowrap"><asp:HyperLink ID="lnkUser" runat="server" CssClass="frmLinkSmall"></asp:HyperLink>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="frmText"><asp:LinkButton ID="lnkLogout" runat="server" CssClass="frmLinkSmall" OnClick="lnkLogout_Click">Logout</asp:LinkButton>&nbsp;</td>
+                        </tr>
+                    </table>                    
+                </td>
+            </tr>
+        </table>
+    
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <table cellpadding="4" cellspacing="0" width="100%" style="background-color: #DDDDDD">
+                        <tr>
+                            <td style="white-space:nowrap;" class="frmTextSmall">&nbsp;You are in:</td>
+                            <td style="width:100%">
+                                <asp:SiteMapPath 
+                                    ID="SiteMapPath1"
+                                    runat="server"
+                                    PathSeparatorStyle-CssClass = "navSeparator"
+                                    Width="100%"
+                                    BorderWidth="2"
+                                    BorderColor="#DDDDDD"
+                                    CssClass = "navMain"                                    
+                                    PathSeparator="»">
+                                </asp:SiteMapPath>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="height:1px; background-color:#999999;"></td>
+            </tr>
+            <tr>
+                <td>
+                    <table cellpadding="8" width="100%">
+                        <tr>
+                            <td>
+                                <asp:contentplaceholder id="MainContent" runat="server"></asp:contentplaceholder>
+                            
+                            
+                            </td>
+                        </tr>
+                    </table>                    
+                </td>
+            </tr>            
+        </table>
+    </div>
+    </form>
+</body>
+</html>

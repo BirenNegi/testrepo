@@ -1,0 +1,508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Design Contract</title>
+
+<!-- Style sheet -->
+<style type="text/css">
+    .Text { font-family:Arial Narrow, Arial, Helvetica; font-size:8pt; }
+    .TextUl { text-decoration:underline;}
+    .Title {font-family: Arial, Helvetica; font-size: 24pt; }
+    .SubTitle { font-family: Arial, Helvetica; font-size: 16pt; }
+    .SupSection { font-family: Arial, Helvetica; font-size: 11pt; font-weight: bold; white-space:nowrap; }
+    .Section { font-family:Arial, Helvetica; font-size:8pt; font-weight: bold; }
+    .SubSection { font-family:Arial, Helvetica; font-size: 10pt; font-weight: bold; }
+    .SupText { font-family:Arial, Helvetica; font-size: 10pt; font-weight: normal; }
+</style>
+</head>
+
+<body>
+
+<!-- Page With -->
+<table width="750" cellpadding="0" cellspacing="0"><tr><td>
+
+<table width="100%">
+    <!-- Logo -->
+    <tr>
+        <td>
+            <table width="100%">
+                <tr>
+                    <td><img alt="logo" src="../../Images/VaughanLogoPrint.gif" width="180" height="171"/></td>
+                    <td align="right">
+                        <table>
+                            <tr>
+                                <td class="Title" align="center">Building your Vision</td>
+                            </tr>
+                            <tr>
+                                <td class="SubTitle" align="center">w w w . v a u g h a n s . c o m . a u</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Title -->
+    <tr>
+        <td>
+            <table width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td align="left" class="SubTitle" style="border-bottom: 1px solid #000000;">SUBCONTRACT</td>
+                    <td align="right" class="SubTitle" style="border-bottom: 1px solid #000000;">Order No. S([SOS:Variable:ProjectNumber Title:Project Number/])-[SOS:Variable:OrderNumber Title:Order Number/]</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- General Project Info -->
+    <tr>
+        <td>
+            <table width="100%">
+                <tr>
+                    <td class="SupSection">Contract Reference/Project:</td>
+                    <td style="width:100%">
+                        <table cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td class="SupText">[SOS:Variable:ProjectName Title:Project Name/]</td>
+                                <td align="right">
+                                    <table cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td class="SupSection">Code</td>
+                                            <td class="Text">&nbsp;</td>
+                                            <td class="SupText">[SOS:Variable:TradeCode Title:Trade Code/]</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr><td class="Text" colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td class="SupSection">Date of this Subcontract:</td>
+                    <td class="SupText">[SOS:Variable:ContractDate Title:Contract Date/]</td>
+                </tr>
+                <tr>
+                    <td valign="top" class="SupSection">Between:</td>
+                    <td class="SupText">
+                        Vaughan Constructions Pty Ltd
+                        <br />
+                        ABN No 26 004 334 543
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="SupSection">And the Consultant:</td>
+                    <td class="SupText">
+                        [SOS:Variable:SubcontractorName Title:Consultant Name/]
+                        <br />
+                        [SOS:Variable:SubcontractorABN Title:Consultant ABN/]
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="SupSection">Contract Sum</td>
+                    <td>
+                        [SOS:Financial]
+                        <table>
+                            <tr>
+                                <td class="SupText">AUD</td>
+                                <td class="SupText">$</td>
+                                <td align="right" class="SupText">[SOS:Variable:ContractValue Title:Value/]</td>
+                            </tr>
+                            <tr>
+                                <td class="SupText">+GST</td>
+                                <td class="SupText">$</td>
+                                <td align="right" class="SupText">[SOS:Variable:ContractGST Title:GST/]</td>
+                            </tr>
+                            <tr>
+                                <td class="SupText">TOTAL</td>
+                                <td class="SupText">$</td>
+                                <td align="right" class="SupText">[SOS:Variable:ContractTotal Title:Total/]</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td class="SupText">Amount in words: [SOS:Variable:ContratTotalWords Title:Total in words/] (Excluding G.S.T)</td>
+                            </tr>
+                        </table>
+                        [/SOS:Financial]
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <!-- Regarding -->
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="SupSection">Regarding:</td>
+                </tr>
+                <tr>
+                    <td class="SupText">
+                        <b>Vaughan has in this Subcontract requested the Consultant to carry out and complete, where relevant, 
+                        the scope of works in accordance with the Head Contract and the Scope of Works as they are set out in 
+                        this Subcontract (refer to Schedule A), which are required by Vaughan for performing its obligations 
+                        under the Head Contract which the Consultant has agreed to do.<br />
+                        <br />
+                        If there is any inconsistency between this Subcontract and the Head Contract, the terms of the Head Contract shall prevail.</b><br />
+                        <br />
+                        The Consultant will carry out the Scope of Scope of Works and otherwise comply with and be bound by this Subcontract.
+                        Vaughan will pay the Consultant the Contract Sum, and any other sums that become payable under this Subcontract and
+                        otherwise comply with and be bound by this Subcontract.
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Signatures -->
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="SubSection">EXECUTION</td>
+                </tr>
+                <tr>
+                    <td class="SupText">THE CONSULTANT-:- Signed by a duly authorized officer and on behalf of the Consultant in the presence of a witness</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <table width="95%">
+                <tr>
+                    <td class="SupSection" colspan="2">
+                        Signatory<br />
+                        <br />                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="SupSection" style="width: 50%">Name</td>
+                    <td class="SupSection" style="width: 50%">Name of Witness</td>
+                </tr>
+                <tr>
+                    <td class="SupSection" colspan="2">Date</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="SupText">
+                        VAUGHAN CONSTRUCTIONS PTY LTD:- Signed by a duly authorized officer and on behalf 
+                        of Vaughan in the presence of a witness
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <table width="95%">
+                <tr>
+                    <td class="SupSection" colspan="5">Signatory </td>
+                </tr>
+                <tr>
+                    <td class="SupText">[SOS:Variable:PMSignature Title:PM Signature/]</td>
+                    <td class="Text">&nbsp;</td>
+                    <td class="SupText">[SOS:Variable:CMSignature Title:CM Signature/]</td>
+                </tr>
+                <tr>
+                    <td class="SupSection">Name:&nbsp;<span class="SupText">[SOS:Variable:PMName Title:PM Name/]</span></td>
+                    <td class="Text">&nbsp;</td>
+                    <td class="SupSection">Name of Witness:&nbsp;<span class="SupText">[SOS:Variable:CMName Title:CM Name/]</span></td>
+                </tr>
+                <tr>
+                    <td class="SupSection">Date:&nbsp;<span class="SupText">[SOS:Variable:ContractDate Title:Contract Date/]</span></td>
+                    <td class="Text">&nbsp;</td>
+                    <td class="SupText">[SOS:Variable:ContractDate Title:Contract Date/]</td>
+                    <td class="Text">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+[SOS:Footer]
+<table cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td style="width: 34%; font-family: Arial, Helvetica; font-size: 16pt;" valign="bottom">ESTABLISHED 1955</td>
+        <td style="width: 33%; font-family: Arial, Helvetica; font-size: 10pt;">
+            <b>Melbourne</b><br />
+            103 Pelham Street<br />
+            Post Office Box 98<br />
+            Carlton South Vic 3053<br />
+            Telephone: 03 9347 2611<br />
+            Facsimile: 03 9347 6130<br />
+            Web Page: www.vaughans.com.au
+        </td>
+        <td style="width: 33%; font-family: Arial, Helvetica; font-size: 10pt;">
+            <b>Sydney</b><br />
+            9a Commercial Road<br />
+            Kingsgrove NSW 2208<br />
+            Post Office Box 451<br />
+            Kingsgrove NSW 1480<br />
+            Telephone: 02 9502 4544<br />
+            Facsimile: 02 9502 4463<br />
+            Web Page: www.vaughans.com.au
+        </td>
+    </tr>
+</table>
+[/SOS:Footer]
+
+<span style="page-break-after: always"></span>
+
+<!-- Terms -->
+[SOS:Terms]
+<table width="100%">
+    <tr>
+        <td align="center">
+            <table>
+                <tr>
+                    <td align="center" class="SubTitle">CONDITIONS OF CONSULTANT AGREEMENT</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table width="100%">
+                <tr>
+                    <td class="SupText" style="width:1%">BETWEEN</td>
+                    <td class="SupText" style="width:99%" align="center">VAUGHAN CONSTRUCTIONS PTY. LTD. (the "Company")</td>
+                </tr>
+                <tr>
+                    <td class="SupText" style="width:1%" align="center">AND</td>
+                    <td class="SupText" style="width:99%" align="center">THE CONSULTANT</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <!-- PRIMARY OBLIGATIONS -->
+                <tr>
+                    <td colspan="3" class="Section">GENERAL</td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">1.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text">The terms and conditions of this agreement shall not be varied, amended or discharged unless in writing and signed by both the "Company" and the Consultant.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="Section">CONTRACT SUM, PAYMENT</td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">2A.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text"><span class="TextUl">Contract Sum</span> - The Contract Sum quoted in these terms is not subject to variation due to a rise or fall in the price of materials, services, or labour and in the event that the Consultant incurs overtime or other additional expenses, such expenses shall be the sole responsibility of the Consultant.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">2B.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text">Except where express provision is made to the contrary, and subject to this clause, any amount that may be payable under this agreement is exclusive of any GST.  If the supplier makes a taxable supply in connection with this agreement for a consideration which represents its value, then the recipient of the taxable supply must also pay, at the same time and in the same manner as the value is otherwise payable, the amount of any GST payable in respect of the taxable supply.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">3.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text"><span class="TextUl">Payment</span> - (30 Days Term) Tax Invoices for full or partial completion received prior to the last day of a calendar month will be paid by the "Company" (subject to the right of retention details in the following clause) on the last day of the following month.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="Section">TIME</td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">4.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text">No variation to the commencement date or completion date will be accepted unless the written consent of the nominated representative of the "Company" is obtained.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">5.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text">Time is of the essence in this agreement.  It is the responsibility of the Consultant to comply with its liabilities under this agreement by the completion date and in accordance with the "Company's" schedule.  In the event of breach of this condition the Consultant shall be liable to the "Company" for such liquidated damages as may be incurred by the "Company", and the "Company" shall be entitled to set-off such damages against any money owing by the "Company" pursuant to this agreement or any other agreement.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">6.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text">
+                        <span class="Section">INSURANCE</span>
+                        <br />
+                        The Consultant agrees that it will maintain a Professional Indemnity Insurance policy throughout the life of this agreement with an insurer acceptable to the "Company" to cover any one claim of not less than the figure shown on page 1 of this agreement and the Consultant shall indemnify the "Company" against all Professional Liability claims arising out of any negligent act, error or omission by the Consultant or the Consultant's staff or any professional party employed or engaged by the Consultant in the execution of the Consultant's professional activities.<br />
+                        <br />
+	                    The Consultant shall provide documentation evidencing the existence of insurance cover as required by the BUILDING ACT 1993 in relation to Building Practitioners responsibilities to the "Company" prior to the commencement of work including:<br />
+	                    <br />
+	                    a)&nbsp;&nbsp;&nbsp;a copy of the Insurer's policy documents;<br />
+	                    b)&nbsp;&nbsp;&nbsp;a certificate of Currency from the Insurer noting the "Company" as an Additional Named Insured on the policy; and<br />
+	                    c)&nbsp;&nbsp;&nbsp;proof that premiums have been paid<br />
+	                    <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">7.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text"><span class="Section">TERMINATION:</span>- The "Company" reserves the right to take over the Consultant's work and complete it or any section of it at the Consultant's expense if in the opinion of the "Company" the Consultant is not performing the contract programme or the contract programme as up dated from time to time by the "Company."  It is the Consultant's responsibility to keep fully aware of the <b>current programme</b> at all times.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">8.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text"><span class="Section">COPYRIGHT:</span>- All documents and drawings prepared by the Consultant and any works executed from these documents and drawings shall remain the property of the "Company" or on creation vest in the "Company".<br /><br /></td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">9.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text"><span class="Section">OWNERSHIP OF DOCUMENTS:</span>- The Documents and drawings prepared by the Consultant are the property of the "Company" whether the Project for which they are prepared is executed or not.  The Consultant may retain one set of the documents and drawings as record. The consultant does not have the right to sell or distribute the documents to any other party at any time without the written permission of the Company.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">10.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text"><span class="Section">AGREEMENTS</span> - The consultant will ensure that a fee proposal is tabled for Company review. Once agreement is reached, the Company will prepare a formal Consultant Agreement which shall be mailed to the consultant. This document is required to be signed unamended and returned to the "Company" prior to any progress claims (or payments) being made.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">11.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text">
+                        <span class="Section">INITIAL CONSULTANT MEETING</span> - The consultant will attend an initial design meeting at which various base design documents will be issued for the consultant to use during the design phase, these may include: Soil report, Survey plans, Bill of Quantities, Town Planning (Sketch) drawings, Marketing Submission, Record of Client special requirements/meetings etc.  These documents will form the base of the design documents, and consultants are obliged to follow these requirements exactly requesting direction from VC where conflicting information, lack of information etc. are found.<br />
+                        The "Company" will set at least two programme dates -  "Preliminary" and "Final" without exception, the consultant shall deliver to the "Company" office the required documentation by 1.00pm on this day.<br /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">12.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text">
+                        <span class="Section">REGULAR CONSULTANT MEETINGS</span> –  The consultant will attend regular meetings (usually weekly/fortnightly) at the "Company" offices.  Meetings will run for approx 2 hours (this varies depending on issues at hand). Consultants will be available on time and will bring the following to <span class="TextUl">each meeting:</span>
+                        <ul>
+                            <li>Most current working/developed drawings on A3 size (multiple copies for issue to all parties)</li>
+                            <li>Responses to assigned actions raised from previous meetings</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">13.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text"><span class="Section">RESPONSIBILITIES TO PARALLEL CONSULTANTS</span> -  Each consultant recognizes the reliance of his work on adjacent members of the design team. Regular contact will be kept between consultants including the regular swapping of current drawing files during design development such that all progressive drawings over all disciplines are always as updated as possible. The architectural drafting organization has a special responsibility to maintain current background drawings and issue in Dwg. format to parallel consultants with every amendment, and at least a week prior to milestone dates being reached.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">14.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text">
+                        <span class="Section">DOCUMENTS</span> – The documents required in terms of the documentation programme as agreed at the first design meeting are to be thoroughly checked/modified to ensure compliance with:
+                        <ul>
+                            <li>Base Design Documentation and all amendments</li>
+                            <li>Minutes of all meetings</li>
+                            <li>Final drawing checklist</li>
+                            <li>Parallel consultant's documents.</li>
+                        </ul>
+                        Individual PDF drawing files of the drawings shall be sent electronically to the Design Manager of the "Company" by 5.00pm on the due day, each file shall be labelled as follows:<br />
+                        <br />
+                        (Drawing number)_(Revision number).pdf<br />
+                        <br />
+                        example: WD04_REVC.pdf<br />
+                        <br />
+                        4 hard copies of final drawings prior to CC are to be included in the scope of works of the Consultant.<br />
+                        4 hard copies of final drawing at the completion of the project are to be included in the scope of works of the Consultant.<br />
+                        <br />
+                        <b>Scale</b> – Each document shall include:
+                        <ul>
+                            <li>The scale</li>
+                            <li>A scale bar</li>
+                            <li>The applicable drawing size to suit the scale i.e. 1:250 @ B1 size.</li>
+                        </ul>
+                        <b>Title Block –</b>
+                        <ul>
+                            <li>All drawings will include a title block that shows:</li>
+                            <li>Vaughan Constructions logo and contact details in a size of no less that 80*80mm</li>
+                            <li>Vaughan Constructions Project number</li>
+                            <li>Title</li>
+                            <li>North Point</li>
+                            <li>Scale</li>
+                            <li>Project Name</li>
+                            <li>Date of first drawing issue</li>
+                        </ul>
+                        <b>Revisions –</b>
+                        <ul>
+                            <li>Revisions are to be clouded and detailed in revision column.</li>
+                        </ul>
+                        <b>Integrity of Data:</b> - The Consultant undertakes to ensure as practicably as possible that the files supplied to the "Company" are free of any computer viruses.<br />
+                        <br />
+                        Should a virus be traced to a file originating from the Consultant, the cost of repair and reinstatement of the "Company" CAD system and any lost time and data will be borne in full by the Consultant.<br />
+                        <br />
+                        The consultant shall not include his company logo/details on the drawings without the prior written approval the "Company".<br />
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">15.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text"><span class="Section">AUTHORITIES</span> – It is the responsibility of the consultants to pursue any relevant authority to obtain information, clarification, consent etc. in a timely manner to ensure that information is received, updated on consultants drawing and issued to parallel consultants in enough time for them to complete their works by the due date.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">16.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text"><span class="Section">EXISTING CONDITIONS</span> – The consultant will visit the site / client / authorities in order to ensure that he is fully conversant with the site/project, including the identification of existing conditions, obstructions, materials etc that may have a bearing on the overall design and buildability of the project. The reliance on only survey plans etc will be unacceptable.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">17.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text"><span class="Section">CLIENT</span> – The consultant may be included in meetings with the client in order to progress the design development.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">18.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text"><span class="Section">SAFE DESIGN</span> –  The consultant will comply with section 28 of the Occupational Health & Safety Act 2004.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">19.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text">
+                        <span class="Section">CONSULTANTS SUBCONTRACTORS:</span><br />
+                        Should the consultant wish to engage subcontract assistance for the carrying out of the works, then nothing in this agreement shall alter any of the responsibilities of the principal contractor, to this end the "Company" expects that the principal contractor ensures that the subcontract consultant is always up to date with the latest information i.e drawings, BOQ, Minutes of meetings etc.  The Principle contractor will bring the Subcontract consultant to meetings completely at the discretion of VC.<br /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">20.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text"><span class="Section">TIME CHARGES:</span>- An hourly fee and estimated hours if required for additional works shall be obtained by the Consultant and approved by the "Company" prior to work being carried out.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">21.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text">
+                        <span class="Section">WORK DURING CONSTRUCTION:</span><br />
+                        The consultant will issue requested Autocad files immediately upon request to the "Company" contractors free of charge.  Consultants will work with the "Company" contractors attending to RFI's whether verbal, faxed, hard copies or electronically submitted.  Time is of the highest consideration during the shop drawing phase of any project, therefore the consultant shall give the highest priority to the provision of answers to RFI's.<br /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="Text" valign="top">22.</td>
+                    <td class="Text">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td class="Text"><span class="Section">PROJECT COMPLETION:</span> Upon completion of a project, the consultant shall consult with the "Company's" Project Manager (Construction) and verify if any "as built" alterations are required to the documents.  Once fully modified, a CD of all files including most current PDF and AutoCad drawings (including XREFS) shall be lodged at the "Company" office. The time frame may vary, however the aim is to have a CD lodged within 4 weeks of Practical Completion of the project.  The consultant may be required to visit the site, hold discussion with the Site Foreman / Project Manager/ Contractor to correctly ascertain the correct information prior to updating of drawings.</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<span style="page-break-after: always"></span>
+[/SOS:Terms]
+
+<!-- Annexure A  -->
+<table width="100%">
+    <tr>
+        <td class="SubTitle" align="center">Annexure A - The Works<br /><br /></td>
+    </tr>
+    <tr>
+        <td class="Text">[SOS:Variable:ScopeOfWorks Title:Scope of works/]</td>
+    </tr>
+</table>
+
+</td></tr></table>
+
+</body>
+</html>

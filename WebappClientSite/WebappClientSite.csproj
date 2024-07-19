@@ -1,0 +1,854 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B650ACD-4A5A-4128-B8A2-E424AFE7DED6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SOS</RootNamespace>
+    <AssemblyName>WebappClientSite</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60623.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\BDM\BDMGraphs\bin\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\BDM\BDMGraphs\bin\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\example.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="Images\1x1.gif" />
+    <Content Include="Images\BackNote.gif" />
+    <Content Include="Images\BackTest.gif" />
+    <Content Include="Images\building.GIF" />
+    <Content Include="Images\Draft.png" />
+    <Content Include="Images\IconAdd.gif" />
+    <Content Include="Images\IconCalendar.gif" />
+    <Content Include="Images\IconChecked.gif" />
+    <Content Include="Images\IconCollapse.jpg" />
+    <Content Include="Images\IconConfirmed.gif" />
+    <Content Include="Images\IconCopy.gif" />
+    <Content Include="Images\IconDelete.gif" />
+    <Content Include="Images\IconDocument.gif" />
+    <Content Include="Images\IconDown.gif" />
+    <Content Include="Images\IconDownDirection.png" />
+    <Content Include="Images\IconDownload.gif" />
+    <Content Include="Images\IconEdit.gif" />
+    <Content Include="Images\IconEmail.gif" />
+    <Content Include="Images\IconExpand.jpg" />
+    <Content Include="Images\IconPhone.png" />
+    <Content Include="Images\IconPrint.gif" />
+    <Content Include="Images\IconSearch.gif" />
+    <Content Include="Images\IconUnchecked.gif" />
+    <Content Include="Images\IconUp.gif" />
+    <Content Include="Images\IconUpDirection.png" />
+    <Content Include="Images\IconView.gif" />
+    <Content Include="Images\IconZip.png" />
+    <Content Include="Images\LeftCorner.gif" />
+    <Content Include="Images\picturesfolde.png" />
+    <Content Include="Images\Progress.gif" />
+    <Content Include="Images\RightCorner.gif" />
+    <Content Include="Images\Sync11.gif" />
+    <Content Include="Images\sync3.gif" />
+    <Content Include="Images\VaughanBackground.gif" />
+    <Content Include="Images\VaughanLogo.gif" />
+    <Content Include="Images\VaughanLogoPrint.gif" />
+    <Content Include="Images\VaughanLogoPrintQLD.jpg" />
+    <Content Include="Images\VaughanLogoSmall.gif" />
+    <Content Include="Images\VaughanName.gif" />
+    <Content Include="Image\1x1.gif" />
+    <Content Include="Image\arrowhead2-right.png" />
+    <Content Include="Image\Background V.jpg" />
+    <Content Include="Image\Banner.GIF" />
+    <Content Include="Image\bg-divider.png" />
+    <Content Include="Image\bg2.jpg" />
+    <Content Include="Image\big-v-light.png" />
+    <Content Include="Image\btns-next-prev.png" />
+    <Content Include="Image\bullet.png" />
+    <Content Include="Image\bullet1.GIF" />
+    <Content Include="Image\bullet_ball_glass_red.png" />
+    <Content Include="Image\Calendar1.gif" />
+    <Content Include="Image\Calendar_Small.gif" />
+    <Content Include="Image\Call.png" />
+    <Content Include="Image\call2.png" />
+    <Content Include="Image\ctlFuncCalendarOver.gif" />
+    <Content Include="Image\Delete.gif" />
+    <Content Include="Image\delete2.png" />
+    <Content Include="Image\document_delete.png" />
+    <Content Include="Image\edit1.png" />
+    <Content Include="Image\Fileicon.png" />
+    <Content Include="Image\Green_Arrow_Down.svg.png" />
+    <Content Include="Image\Green_Arrow_Up.svg.png" />
+    <Content Include="Image\Heading.GIF" />
+    <Content Include="Image\home1.png" />
+    <Content Include="Image\home2.png" />
+    <Content Include="Image\Logo3.png" />
+    <Content Include="Image\Logo3a.png" />
+    <Content Include="Image\logo4.png" />
+    <Content Include="Image\logo.png" />
+    <Content Include="Image\Logo_Landscape.png" />
+    <Content Include="Image\Master VC Logo White_Panoramic_JPEG.jpg" />
+    <Content Include="Image\MyFavorites-icon.png" />
+    <Content Include="Image\Myfavorites.png" />
+    <Content Include="Image\pagination.png" />
+    <Content Include="Image\RECT.GIF" />
+    <Content Include="Image\Remarkability.PNG" />
+    <Content Include="Image\santosh.PNG" />
+    <Content Include="Image\search1.png" />
+    <Content Include="Image\search2.png" />
+    <Content Include="Image\search3.png" />
+    <Content Include="Image\SOS.gif" />
+    <Content Include="Image\ui-icons_0078ae_256x240.png" />
+    <Content Include="Image\ui-icons_777777_256x240.png" />
+    <Content Include="Image\v-logo_mask_trans_overlay.png" />
+    <Content Include="Image\VAUCON20150320_Logo_Portrait.jpg" />
+    <Content Include="Image\VaughanLogo.gif" />
+    <Content Include="Image\VaughanLogoPrintQLD.jpg" />
+    <Content Include="Image\VC Logo_Landscape.jpg" />
+    <Content Include="Image\videos\Vaughans_clouds_intro01.mp4" />
+    <None Include="JQuery\jquery-1.7-vsdoc.js" />
+    <Content Include="JQuery\jquery-1.7.1.js" />
+    <Content Include="JQuery\jquery.slides.min.js" />
+    <Content Include="JQuery\Slider\bjqs-1.3.js" />
+    <Content Include="JQuery\Slider\bjqs-1.3.min.js" />
+    <Content Include="JQuery\Slider\jquery.secret-source.min.js" />
+    <Content Include="js\bjqs-1.3.js" />
+    <Content Include="js\bjqs-1.3.min.js" />
+    <Content Include="js\libs\jquery.secret-source.min.js" />
+    <Content Include="Modules\People\ViewEmployee.aspx" />
+    <Content Include="Modules\Projects\ClientProjects.aspx" />
+    <Content Include="Modules\Projects\ClientProjectDetails.aspx" />
+    <Content Include="Modules\Projects\Gallery.aspx" />
+    <Content Include="Modules\Projects\index.html" />
+    <Content Include="Modules\Projects\ListClaims.aspx" />
+    <Content Include="Modules\Projects\ListClientVariations.aspx" />
+    <Content Include="Modules\Projects\ListDrawingsTransmittals.aspx" />
+    <Content Include="Modules\Projects\ListEOTs.aspx" />
+    <Content Include="Modules\Projects\ListMeetingMinutes.aspx" />
+    <Content Include="Modules\Projects\ListRFIs.aspx" />
+    <Content Include="Modules\Projects\Photogallery.aspx" />
+    <Content Include="Modules\Projects\PhotoGallery1.aspx" />
+    <Content Include="Modules\Projects\Photogallery3.aspx" />
+    <Content Include="Modules\Projects\ReplyRFI.aspx" />
+    <Content Include="Modules\Projects\ReportRFIs.aspx" />
+    <Content Include="Modules\Projects\ShowClaim.aspx" />
+    <Content Include="Modules\Projects\ShowClientVariation.aspx" />
+    <Content Include="Modules\Projects\ShowEOT.aspx" />
+    <Content Include="Modules\Projects\ShowMeetingMinutes.aspx" />
+    <Content Include="Modules\Projects\ShowRFI.aspx" />
+    <Content Include="Modules\Projects\ShowRFIFile.aspx" />
+    <Content Include="Modules\Projects\ShowRFIsAllResponses.aspx" />
+    <Content Include="Modules\Projects\ViewEOT.aspx" />
+    <Content Include="Modules\Projects\ViewMeetingMinutes.aspx" />
+    <Content Include="Modules\Projects\ViewRFI.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="Image\home3" />
+    <Content Include="MasterPages\Client.master" />
+    <Content Include="Images\Thumbs.db" />
+    <Content Include="Config\SOS.Config" />
+    <Content Include="Modules\Projects\ReportDataSet.xsc">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Modules\Projects\ReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Modules\Projects\ReportDataSet.xss">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Modules\Core\ChangePassword.aspx" />
+    <Content Include="Modules\Core\Controls\BooleanReader.ascx" />
+    <Content Include="Modules\Core\Controls\BooleanViewer.ascx" />
+    <Content Include="Modules\Core\Controls\ComboAndTextReader.ascx" />
+    <Content Include="Modules\Core\Controls\DateReader.ascx" />
+    <Content Include="Modules\Core\Controls\DiaplayOrderReader.ascx" />
+    <Content Include="Modules\Core\Controls\ErrorMessage.ascx" />
+    <Content Include="Modules\Core\Controls\FileLabel.ascx" />
+    <Content Include="Modules\Core\Controls\FileLink.ascx" />
+    <Content Include="Modules\Core\Controls\FileSelect.ascx" />
+    <Content Include="Modules\Core\Controls\GridPageSize.ascx" />
+    <Content Include="Modules\Core\Controls\TitleBar.ascx" />
+    <Content Include="Modules\Core\Error.aspx" />
+    <Content Include="Modules\Core\Login.aspx" />
+    <Content Include="Modules\Core\SendPassword.aspx" />
+    <Content Include="Modules\Help\Help.aspx" />
+    <Content Include="Modules\Projects\Controls\ComparisonCheck.ascx" />
+    <Content Include="Modules\Projects\Controls\ComparisonEdit.ascx" />
+    <Content Include="Modules\Projects\Controls\ComparisonView.ascx" />
+    <Content Include="Modules\Projects\Controls\Controls\BalanceInclude.ascx" />
+    <Content Include="Modules\Projects\Controls\FilterSelector.ascx" />
+    <Content Include="Modules\Projects\Controls\ProcessManager.ascx" />
+    <Content Include="Modules\Projects\Controls\QuoteDrawingsView.ascx" />
+    <Content Include="Modules\Projects\Controls\TradeBudget.ascx" />
+    <Content Include="Modules\Projects\EditParticipation.aspx" />
+    <Content Include="Modules\Projects\EditParticipationItem.aspx" />
+    <Content Include="Modules\Projects\SearchParticipationsSubContractor.aspx" />
+    <Content Include="Modules\Projects\ShowCheckList.aspx" />
+    <Content Include="Modules\Projects\ShowDrawingRevision.aspx" />
+    <Content Include="Modules\Projects\ShowInvitation.aspx" />
+    <Content Include="Modules\Projects\ShowQuote.aspx" />
+    <Content Include="Modules\Projects\ShowQuoteFile.aspx" />
+    <Content Include="Modules\Projects\ShowTransmittal.aspx" />
+    <Content Include="Modules\Projects\UploadQuoteFile.aspx" />
+    <Content Include="Modules\Projects\ViewParticipationSubContractor.aspx" />
+    <Content Include="ProjectImages\ALDI - Dandenong - WH &amp; DC\banner01.jpg" />
+    <Content Include="ProjectImages\ALDI - Dandenong - WH &amp; DC\banner02.jpg" />
+    <Content Include="ProjectImages\ALDI - Dandenong - WH &amp; DC\banner03.jpg" />
+    <Content Include="ProjectImages\ALDI - Dandenong - WH &amp; DC\example-slide-4.jpg" />
+    <Content Include="ProjectImages\ALDI - Dandenong - WH &amp; DC\truck_popup_open.png" />
+    <Content Include="ProjectImages\ALDI - Dandenong - WH &amp; DC\tumblr_m8337kd2eG1qbkusho1_1280.png" />
+    <Content Include="ProjectImages\ALDI - Dandenong - WH &amp; DC\tumblr_m8amuhlEAj1qbkusho1_1280.png" />
+    <Content Include="ProjectImages\ALDI - Dandenong - WH &amp; DC\VaughanLogo.gif" />
+    <Content Include="ProjectImages\ALDI - Dandenong - WH &amp; DC\VaughanLogoPrint.gif" />
+    <Content Include="ProjectImages\ALDI - Dandenong - WH &amp; DC\VaughanLogoSmall.gif" />
+    <Content Include="ProjectImages\ALDI - Dandenong - WH &amp; DC\VaughanName.gif" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Style\ImageSlider.css" />
+    <Content Include="Style\MasterStyleSheet.css" />
+    <Content Include="Style\StyleSheet.css" />
+    <Content Include="videos\clouds_intro01.mp4" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Client.master.cs">
+      <DependentUpon>Client.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Client.master.designer.cs">
+      <DependentUpon>Client.master</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\BooleanReader.ascx.cs">
+      <DependentUpon>BooleanReader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\BooleanReader.ascx.designer.cs">
+      <DependentUpon>BooleanReader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\BooleanViewer.ascx.cs">
+      <DependentUpon>BooleanViewer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\BooleanViewer.ascx.designer.cs">
+      <DependentUpon>BooleanViewer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\ComboAndTextReader.ascx.cs">
+      <DependentUpon>ComboAndTextReader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\ComboAndTextReader.ascx.designer.cs">
+      <DependentUpon>ComboAndTextReader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\DateReader.ascx.cs">
+      <DependentUpon>DateReader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\DateReader.ascx.designer.cs">
+      <DependentUpon>DateReader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\DiaplayOrderReader.ascx.cs">
+      <DependentUpon>DiaplayOrderReader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\DiaplayOrderReader.ascx.designer.cs">
+      <DependentUpon>DiaplayOrderReader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\ErrorMessage.ascx.cs">
+      <DependentUpon>ErrorMessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\ErrorMessage.ascx.designer.cs">
+      <DependentUpon>ErrorMessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\FileLabel.ascx.cs">
+      <DependentUpon>FileLabel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\FileLabel.ascx.designer.cs">
+      <DependentUpon>FileLabel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\FileLink.ascx.cs">
+      <DependentUpon>FileLink.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\FileLink.ascx.designer.cs">
+      <DependentUpon>FileLink.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\FileSelect.ascx.cs">
+      <DependentUpon>FileSelect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\FileSelect.ascx.designer.cs">
+      <DependentUpon>FileSelect.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\GridPageSize.ascx.cs">
+      <DependentUpon>GridPageSize.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\GridPageSize.ascx.designer.cs">
+      <DependentUpon>GridPageSize.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\TitleBar.ascx.cs">
+      <DependentUpon>TitleBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Controls\TitleBar.ascx.designer.cs">
+      <DependentUpon>TitleBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\SendPassword.aspx.cs">
+      <DependentUpon>SendPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\SendPassword.aspx.designer.cs">
+      <DependentUpon>SendPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Help\Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Help\Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\People\ViewEmployee.aspx.cs">
+      <DependentUpon>ViewEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\People\ViewEmployee.aspx.designer.cs">
+      <DependentUpon>ViewEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ClientProjects.aspx.cs">
+      <DependentUpon>ClientProjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ClientProjects.aspx.designer.cs">
+      <DependentUpon>ClientProjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ComparisonCheck.ascx.cs">
+      <DependentUpon>ComparisonCheck.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ComparisonCheck.ascx.designer.cs">
+      <DependentUpon>ComparisonCheck.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ComparisonEdit.ascx.cs">
+      <DependentUpon>ComparisonEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ComparisonEdit.ascx.designer.cs">
+      <DependentUpon>ComparisonEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ComparisonView.ascx.cs">
+      <DependentUpon>ComparisonView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ComparisonView.ascx.designer.cs">
+      <DependentUpon>ComparisonView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\Controls\BalanceInclude.ascx.cs">
+      <DependentUpon>BalanceInclude.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\Controls\BalanceInclude.ascx.designer.cs">
+      <DependentUpon>BalanceInclude.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\FilterSelector.ascx.cs">
+      <DependentUpon>FilterSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\FilterSelector.ascx.designer.cs">
+      <DependentUpon>FilterSelector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ProcessManager.ascx.cs">
+      <DependentUpon>ProcessManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ProcessManager.ascx.designer.cs">
+      <DependentUpon>ProcessManager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\QuoteDrawingsView.ascx.cs">
+      <DependentUpon>QuoteDrawingsView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\QuoteDrawingsView.ascx.designer.cs">
+      <DependentUpon>QuoteDrawingsView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\TradeBudget.ascx.cs">
+      <DependentUpon>TradeBudget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\TradeBudget.ascx.designer.cs">
+      <DependentUpon>TradeBudget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\DashBoard.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\DashBoard.aspx.designer.cs">
+      <DependentUpon>DashBoard.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ClientProjectDetails.aspx.cs">
+      <DependentUpon>ClientProjectDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ClientProjectDetails.aspx.designer.cs">
+      <DependentUpon>ClientProjectDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\EditParticipation.aspx.cs">
+      <DependentUpon>EditParticipation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\EditParticipation.aspx.designer.cs">
+      <DependentUpon>EditParticipation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\EditParticipationItem.aspx.cs">
+      <DependentUpon>EditParticipationItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\EditParticipationItem.aspx.designer.cs">
+      <DependentUpon>EditParticipationItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ListClaims.aspx.cs">
+      <DependentUpon>ListClaims.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ListClaims.aspx.designer.cs">
+      <DependentUpon>ListClaims.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ListClientVariations.aspx.cs">
+      <DependentUpon>ListClientVariations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ListClientVariations.aspx.designer.cs">
+      <DependentUpon>ListClientVariations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ListDrawingsTransmittals.aspx.cs">
+      <DependentUpon>ListDrawingsTransmittals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ListDrawingsTransmittals.aspx.designer.cs">
+      <DependentUpon>ListDrawingsTransmittals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ListEOTs.aspx.cs">
+      <DependentUpon>ListEOTs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ListEOTs.aspx.designer.cs">
+      <DependentUpon>ListEOTs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ListMeetingMinutes.aspx.cs">
+      <DependentUpon>ListMeetingMinutes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ListMeetingMinutes.aspx.designer.cs">
+      <DependentUpon>ListMeetingMinutes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ListRFIs.aspx.cs">
+      <DependentUpon>ListRFIs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ListRFIs.aspx.designer.cs">
+      <DependentUpon>ListRFIs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Photogallery.aspx.cs">
+      <DependentUpon>Photogallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Photogallery.aspx.designer.cs">
+      <DependentUpon>Photogallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\PhotoGallery1.aspx.cs">
+      <DependentUpon>PhotoGallery1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\PhotoGallery1.aspx.designer.cs">
+      <DependentUpon>PhotoGallery1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Photogallery3.aspx.cs">
+      <DependentUpon>Photogallery3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Photogallery3.aspx.designer.cs">
+      <DependentUpon>Photogallery3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ReplyRFI.aspx.cs">
+      <DependentUpon>ReplyRFI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ReplyRFI.aspx.designer.cs">
+      <DependentUpon>ReplyRFI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ReportRFIs.aspx.cs">
+      <DependentUpon>ReportRFIs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ReportRFIs.aspx.designer.cs">
+      <DependentUpon>ReportRFIs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\SearchParticipationsSubContractor.aspx.cs">
+      <DependentUpon>SearchParticipationsSubContractor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\SearchParticipationsSubContractor.aspx.designer.cs">
+      <DependentUpon>SearchParticipationsSubContractor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowCheckList.aspx.cs">
+      <DependentUpon>ShowCheckList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowCheckList.aspx.designer.cs">
+      <DependentUpon>ShowCheckList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowClaim.aspx.cs">
+      <DependentUpon>ShowClaim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowClaim.aspx.designer.cs">
+      <DependentUpon>ShowClaim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowClientVariation.aspx.cs">
+      <DependentUpon>ShowClientVariation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowClientVariation.aspx.designer.cs">
+      <DependentUpon>ShowClientVariation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowDrawingRevision.aspx.cs">
+      <DependentUpon>ShowDrawingRevision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowDrawingRevision.aspx.designer.cs">
+      <DependentUpon>ShowDrawingRevision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowEOT.aspx.cs">
+      <DependentUpon>ShowEOT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowEOT.aspx.designer.cs">
+      <DependentUpon>ShowEOT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowInvitation.aspx.cs">
+      <DependentUpon>ShowInvitation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowInvitation.aspx.designer.cs">
+      <DependentUpon>ShowInvitation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowMeetingMinutes.aspx.cs">
+      <DependentUpon>ShowMeetingMinutes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowMeetingMinutes.aspx.designer.cs">
+      <DependentUpon>ShowMeetingMinutes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowQuote.aspx.cs">
+      <DependentUpon>ShowQuote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowQuote.aspx.designer.cs">
+      <DependentUpon>ShowQuote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowQuoteFile.aspx.cs">
+      <DependentUpon>ShowQuoteFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowQuoteFile.aspx.designer.cs">
+      <DependentUpon>ShowQuoteFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowRFI.aspx.cs">
+      <DependentUpon>ShowRFI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowRFI.aspx.designer.cs">
+      <DependentUpon>ShowRFI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowRFIFile.aspx.cs">
+      <DependentUpon>ShowRFIFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowRFIFile.aspx.designer.cs">
+      <DependentUpon>ShowRFIFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowRFIsAllResponses.aspx.cs">
+      <DependentUpon>ShowRFIsAllResponses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowRFIsAllResponses.aspx.designer.cs">
+      <DependentUpon>ShowRFIsAllResponses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowTransmittal.aspx.cs">
+      <DependentUpon>ShowTransmittal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowTransmittal.aspx.designer.cs">
+      <DependentUpon>ShowTransmittal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\UploadQuoteFile.aspx.cs">
+      <DependentUpon>UploadQuoteFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\UploadQuoteFile.aspx.designer.cs">
+      <DependentUpon>UploadQuoteFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ViewEOT.aspx.cs">
+      <DependentUpon>ViewEOT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ViewEOT.aspx.designer.cs">
+      <DependentUpon>ViewEOT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ViewMeetingMinutes.aspx.cs">
+      <DependentUpon>ViewMeetingMinutes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ViewMeetingMinutes.aspx.designer.cs">
+      <DependentUpon>ViewMeetingMinutes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ViewParticipationSubContractor.aspx.cs">
+      <DependentUpon>ViewParticipationSubContractor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ViewParticipationSubContractor.aspx.designer.cs">
+      <DependentUpon>ViewParticipationSubContractor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ViewRFI.aspx.cs">
+      <DependentUpon>ViewRFI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ViewRFI.aspx.designer.cs">
+      <DependentUpon>ViewRFI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\Help\Docs\" />
+    <Folder Include="RFIsResponse\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FileTransfer\SOS.FileTransferService.Client\SOS.FileTransferService.Client.csproj">
+      <Project>{cdce4c4f-f03c-4a51-a003-e246d2b3dc3b}</Project>
+      <Name>SOS.FileTransferService.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOS.Library\SOS.Library.csproj">
+      <Project>{a6ca9954-8aec-4348-9508-73c97b788e72}</Project>
+      <Name>SOS.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\Claim.rdlc" />
+    <EmbeddedResource Include="Reports\ClientVariation.rdlc" />
+    <EmbeddedResource Include="Reports\EOT.rdlc" />
+    <EmbeddedResource Include="Reports\RFIs.rdlc" />
+    <EmbeddedResource Include="Reports\RFIwithResponses.rdlc" />
+    <EmbeddedResource Include="Reports\RFI.rdlc" />
+    <EmbeddedResource Include="Reports\SeparateAccount.rdlc" />
+    <EmbeddedResource Include="Reports\Transmittal.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53569</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53569/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

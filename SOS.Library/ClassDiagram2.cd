@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SOS.Core.ContractsController" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>luDxtuuYqlUCIa+temGNYi3TllXkCbnZK+WoQ84q9ug=</HashCode>
+      <FileName>Core\Controller\ContractsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.Controller" Collapsed="true">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Core\Controller\Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.PeopleController">
+    <Position X="2.75" Y="2" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AADBJQQAAAgIAACEAAAAAQQABABRIAAAAAAAAAiBBEI=</HashCode>
+      <FileName>Core\Controller\PeopleController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ProcessController" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AWCoYABkgCofQEviChTAAkLTBohgx2FQAwqkaDAfIoA=</HashCode>
+      <FileName>Core\Controller\ProcessController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ProjectsController" Collapsed="true">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>67rztzzfn6u82pc+e46Ic139tpD2+m/a2sXO089L5eU=</HashCode>
+      <FileName>Core\Controller\ProjectsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.SubContractorsController" Collapsed="true">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCBAAAAAAAoAAAgAEAAAQAgAJABAAAAAAAAIAARAAAQ=</HashCode>
+      <FileName>Core\Controller\SubContractorsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.TradesController" Collapsed="true">
+    <Position X="11.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>6W/Gdu+4P2X3qNoAOHBCDS9eZEVugTbNKLUmUf7pKec=</HashCode>
+      <FileName>Core\Controller\TradesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

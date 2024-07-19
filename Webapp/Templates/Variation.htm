@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Contract Template Variations</title>
+
+<!-- Style sheet -->
+<style type="text/css">
+    .Title {font-family: Arial, Helvetica; font-size: 24pt;}
+    .SubTitle { font-family: Arial, Helvetica; font-size: 16pt; }
+    .Line { border-bottom: 1px solid #000000; }
+    .SupText { font-family: Arial, Helvetica; font-size: 11pt; }
+    .Text { font-family: Arial, Helvetica; font-size:10pt; }
+</style>
+</head>
+
+<body>
+
+<!-- Page With -->
+<table width="750" cellpadding="0" cellspacing="0"><tr><td>
+
+    <!-- Header -->
+    <table width="100%">
+        <tr>
+            <td><img alt="logo" src="../../Images/VaughanLogoPrint.gif" width="180" height="171"/></td>
+            <td align="right">
+                <table>
+                    <tr>
+                        <td class="Title" align="center">Building your Vision</td>
+                    </tr>
+                    <tr>
+                        <td class="SubTitle" align="center">w w w . v a u g h a n s . c o m . a u</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+       
+    <!-- General info -->
+    <table>
+        <tr>
+            <td class="Text" colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="SupText" colspan="3"><b>VARIATION ORDER No.&nbsp;S([SOS:Variable:ProjectNumber Title:Project Number/])-[SOS:Variable:OrderNumber Title:Order Number/]/[SOS:Variable:VariationOrder Title:Variation Order/]</b></td>
+        </tr>
+        <tr>
+            <td class="Text" colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="SupText"><b>DATE:</b></td>
+            <td class="Text">&nbsp;</td>
+            <td class="SupText">[SOS:Variable:ContractDate Title:Contract Date/]</td>
+        </tr>
+        <tr>
+            <td class="Text" colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="SupText" valign="top"><b>TO:</b></td>
+            <td class="Text">&nbsp;</td>
+            <td class="SupText">
+                [SOS:Variable:SubcontractorName Title:Subcontractor Name/]
+                <br />
+                [SOS:Variable:SubcontractorAddress Title:Subcontractor Address/]
+            </td>
+        </tr>
+        <tr>
+            <td class="Text" colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="SupText"><b>PROJECT:</b></td>
+            <td class="Text">&nbsp;</td>
+            <td class="SupText">[SOS:Variable:ProjectName Title:Project Name/]</td>
+        </tr>
+        <tr>
+            <td class="SupText"><b>PROJECT No:</b></td>
+            <td class="SupText">&nbsp;</td>
+            <td class="SupText">[SOS:Variable:ProjectNumber Title:Project Number/]</td>
+        </tr>
+    </table>
+    
+    <!-- Line -->
+    <table width="100%">
+        <tr>
+            <td class="Line">&nbsp;</td>
+        </tr>
+    </table>
+    
+    <table width="100%">
+        <tr>
+            <td class="Text">
+                This Variation Order is to be read in conjunction with Main Order and all conditions stated
+                thereon will remain in force for the works stated below.<br />
+                Provide labour, equipment, and materials to complete:
+            </td>
+        </tr>
+        <tr>
+            <td class="Text">&nbsp;</td>
+        </tr>
+    </table>
+    
+    <!-- Header -->
+    <table>
+        <tr>
+            <td class="SupText">RE:</td>
+            <td class="Text">&nbsp;&nbsp;</td>
+            <td class="SupText">SITE INSTRUCTION:</td>
+            <td class="Text">&nbsp;</td>
+            <td class="SupText">[SOS:Variable:SiteInstruction Title:Site Instruction/]</td>
+            <td class="Text">&nbsp;</td>
+            <td class="Text">&nbsp;</td>
+            <td class="SupText">DATED:</td>
+            <td class="Text">&nbsp;</td>
+            <td class="SupText">[SOS:Variable:SiteInstructionDate Title:Site Instruction Date/]</td>
+        </tr>
+        <tr>
+            <td class="SupText">&nbsp;</td>
+            <td class="Text">&nbsp;&nbsp;</td>
+            <td class="SupText">S/CONT.REF:</td>
+            <td class="Text">&nbsp;</td>
+            <td class="SupText">[SOS:Variable:SubcontractorReference Title:Subcontractor Reference/]</td>
+            <td class="Text">&nbsp;</td>
+            <td class="Text">&nbsp;</td>
+            <td class="SupText">DATED:</td>
+            <td class="Text">&nbsp;</td>
+            <td class="SupText">[SOS:Variable:SubcontractorReferenceDate Title:Subcontractor Reference Date/]</td>
+        </tr>
+    </table>
+    
+    <!-- Title -->
+    <table>
+        <tr>
+            <td class="Text">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="SupText">[SOS:Variable:VariationOrderTitle Title:Variation Order Title/]</td>
+        </tr>
+        <tr>
+            <td class="Text">&nbsp;</td>
+        </tr>
+    </table>
+    
+    <!-- Variations List and Total-->
+    <table width="100%">
+        <tr>
+            <td>[SOS:Variable:Variations Title:Variations List/]</td>
+        </tr>
+        <tr>
+            <td align="right">
+                [SOS:Financial]
+                <table>
+                    <tr>
+                        <td colspan="3" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="SupText">THIS VARIATION ORDER</td>
+                        <td class="Text">&nbsp;&nbsp;</td>
+                        <td align="right" class="SupText">[SOS:Variable:VariationsTotal Title:Total/]</td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="SupText">+GST</td>
+                        <td class="Text">&nbsp;&nbsp;</td>
+                        <td align="right" class="SupText">[SOS:Variable:VariationsGST Title:GST/]</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="SupText">TOTAL</td>
+                        <td class="Text">&nbsp;&nbsp;</td>
+                        <td align="right" class="SupText">[SOS:Variable:VariationsTotalPlusGST Title:Total+GST/]</td>
+                    </tr>                
+                </table>
+                [/SOS:Financial]
+            </td>
+        </tr>
+        <tr>
+            <td class="Text">&nbsp;</td>
+        </tr>
+    </table>
+    
+    <!-- Sign -->
+    <table width="100%">
+        <tr>
+            <td valign="top">
+                <table>
+                    <tr>
+                        <td class="SupText" valign="top"><b>CODE:</b></td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="SupText">[SOS:Variable:VariationsTrades Title:Trades/]</td>
+                    </tr>
+                </table>            
+            </td>
+            <td align="right" valign="top">
+                <table>
+                    <tr>
+                        <td align="left">
+                            <table>
+                                <tr>
+                                    <td class="SupText" valign="bottom"><b>AUTH:</b></td>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>[SOS:Variable:PMSignature Title:PM Signature/]</td>
+                                                <td class="Text">&nbsp;</td>
+                                                <td>[SOS:Variable:CMSignature Title:CM Signature/]</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="SupText" align="left"><b>VAUGHAN CONSTRUCTIONS PTY LTD</b></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+    
+    [SOS:Footer]
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td style="width: 34%; font-family: Arial, Helvetica; font-size: 16pt;" valign="bottom">ESTABLISHED 1955</td>
+            <td style="width: 33%; font-family: Arial, Helvetica; font-size: 10pt;">
+                <b>Melbourne</b><br />
+                103 Pelham Street<br />
+                Post Office Box 98<br />
+                Carlton South Vic 3053<br />
+                Telephone: 03 9347 2611<br />
+                Facsimile: 03 9347 6130<br />
+                Web Page: www.vaughans.com.au
+            </td>
+            <td style="width: 33%; font-family: Arial, Helvetica; font-size: 10pt;">
+                <b>Sydney</b><br />
+                9a Commercial Road<br />
+                Kingsgrove NSW 2208<br />
+                Post Office Box 451<br />
+                Kingsgrove NSW 1480<br />
+                Telephone: 02 9502 4544<br />
+                Facsimile: 02 9502 4463<br />
+                Web Page: www.vaughans.com.au
+            </td>
+        </tr>
+    </table>
+    [/SOS:Footer]
+    
+</td></tr></table>
+
+</body>
+</html>

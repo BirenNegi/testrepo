@@ -1,0 +1,4 @@
+﻿function Check() {
+    alert("Hi");
+
+}

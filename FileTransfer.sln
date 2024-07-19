@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{4244A123-20F3-4B27-81DB-BA4F288F417B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{B17801A7-44A0-4156-8373-07C18C119A3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOS.FileTransferService.DataContracts", "FileTransfer\SOS.FileTransferService.DataContracts\SOS.FileTransferService.DataContracts.csproj", "{4C3E6FCE-982A-4CC2-B2CF-D5BF57DBC387}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOS.FileTransferService.FaultContracts", "FileTransfer\SOS.FileTransferService.FaultContracts\SOS.FileTransferService.FaultContracts.csproj", "{45F6E273-4C8D-4204-9EB0-3C970D6C6B0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOS.FileTransferService.MessageContracts", "FileTransfer\SOS.FileTransferService.MessageContracts\SOS.FileTransferService.MessageContracts.csproj", "{451686CD-FD52-4B9E-B4B9-D8F82D6BFE1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOS.FileTransferService.ServiceContracts", "FileTransfer\SOS.FileTransferService.ServiceContracts\SOS.FileTransferService.ServiceContracts.csproj", "{46EAE46A-C059-4C90-92EE-8D426EDD298A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOS.FileTransferService.ServiceImplementation", "FileTransfer\SOS.FileTransferService.ServiceImplementation\SOS.FileTransferService.ServiceImplementation.csproj", "{6EE1A53F-0D23-45BF-B2BC-2A641C8DB9CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOS.FileTransferService.Client", "FileTransfer\SOS.FileTransferService.Client\SOS.FileTransferService.Client.csproj", "{CDCE4C4F-F03C-4A51-A003-E246D2B3DC3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C3E6FCE-982A-4CC2-B2CF-D5BF57DBC387}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{4C3E6FCE-982A-4CC2-B2CF-D5BF57DBC387}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{4C3E6FCE-982A-4CC2-B2CF-D5BF57DBC387}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C3E6FCE-982A-4CC2-B2CF-D5BF57DBC387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45F6E273-4C8D-4204-9EB0-3C970D6C6B0B}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{45F6E273-4C8D-4204-9EB0-3C970D6C6B0B}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{45F6E273-4C8D-4204-9EB0-3C970D6C6B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45F6E273-4C8D-4204-9EB0-3C970D6C6B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{451686CD-FD52-4B9E-B4B9-D8F82D6BFE1B}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{451686CD-FD52-4B9E-B4B9-D8F82D6BFE1B}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{451686CD-FD52-4B9E-B4B9-D8F82D6BFE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{451686CD-FD52-4B9E-B4B9-D8F82D6BFE1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46EAE46A-C059-4C90-92EE-8D426EDD298A}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{46EAE46A-C059-4C90-92EE-8D426EDD298A}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{46EAE46A-C059-4C90-92EE-8D426EDD298A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46EAE46A-C059-4C90-92EE-8D426EDD298A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EE1A53F-0D23-45BF-B2BC-2A641C8DB9CD}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{6EE1A53F-0D23-45BF-B2BC-2A641C8DB9CD}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{6EE1A53F-0D23-45BF-B2BC-2A641C8DB9CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EE1A53F-0D23-45BF-B2BC-2A641C8DB9CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDCE4C4F-F03C-4A51-A003-E246D2B3DC3B}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCE4C4F-F03C-4A51-A003-E246D2B3DC3B}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{CDCE4C4F-F03C-4A51-A003-E246D2B3DC3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCE4C4F-F03C-4A51-A003-E246D2B3DC3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4C3E6FCE-982A-4CC2-B2CF-D5BF57DBC387} = {4244A123-20F3-4B27-81DB-BA4F288F417B}
+		{45F6E273-4C8D-4204-9EB0-3C970D6C6B0B} = {4244A123-20F3-4B27-81DB-BA4F288F417B}
+		{451686CD-FD52-4B9E-B4B9-D8F82D6BFE1B} = {4244A123-20F3-4B27-81DB-BA4F288F417B}
+		{46EAE46A-C059-4C90-92EE-8D426EDD298A} = {4244A123-20F3-4B27-81DB-BA4F288F417B}
+		{6EE1A53F-0D23-45BF-B2BC-2A641C8DB9CD} = {4244A123-20F3-4B27-81DB-BA4F288F417B}
+		{CDCE4C4F-F03C-4A51-A003-E246D2B3DC3B} = {B17801A7-44A0-4156-8373-07C18C119A3C}
+	EndGlobalSection
+EndGlobal

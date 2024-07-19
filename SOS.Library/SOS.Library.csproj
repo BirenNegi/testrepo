@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6CA9954-8AEC-4348-9508-73C97B788E72}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SOS.Library</RootNamespace>
+    <AssemblyName>SOS.Library</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ABCpdf, Version=11.3.0.9, Culture=neutral, PublicKeyToken=a7a0b3f5184f2169, processorArchitecture=MSIL">
+      <HintPath>..\packages\ABCpdf.11.3.09\lib\net40\ABCpdf.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.20.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.20.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel.4.5">
+      <HintPath>..\packages\ExcelDataReader2.1\Excel.4.5.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\packages\EnterpriseLibrary.Data.5.0.505.0\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\packages\Unity.Interception.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\packages\Unity.Interception.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Controller\InductionController.cs" />
+    <Compile Include="Core\Controller\PeopleController.cs" />
+    <Compile Include="Core\Controller\ProcessController.cs" />
+    <Compile Include="Core\Controller\ProjectsController.cs" />
+    <Compile Include="Core\Controller\SiteOrdersController.cs" />
+    <Compile Include="Core\Controller\SubContractorsController.cs" />
+    <Compile Include="Core\Controller\TradesController.cs" />
+    <Compile Include="Core\Info\BusinessUnitInfo.cs" />
+    <Compile Include="Core\Info\ContactInfo.cs" />
+    <Compile Include="Core\Controller\ContractsController.cs" />
+    <Compile Include="Core\Info\ContractApprovalLimitInfo.cs" />
+    <Compile Include="Core\Info\ContractModificationInfo.cs" />
+    <Compile Include="Core\Info\ContractInfo.cs" />
+    <Compile Include="Core\Info\ContractTemplateInfo.cs" />
+    <Compile Include="Core\Controller\Controller.cs" />
+    <Compile Include="Core\Info\ClientTradeTypeInfo.cs" />
+    <Compile Include="Core\Info\ClientTradeInfo.cs" />
+    <Compile Include="Core\Info\ClientVariationInfo.cs" />
+    <Compile Include="Core\Info\ClientVariationItemInfo.cs" />
+    <Compile Include="Core\Info\ClientVariationTradeInfo.cs" />
+    <Compile Include="Core\Info\ClientContactInfo.cs" />
+    <Compile Include="Core\Info\ClaimInfo.cs" />
+    <Compile Include="Core\Info\ClaimTradeInfo.cs" />
+    <Compile Include="Core\Info\ClaimVariationInfo.cs" />
+    <Compile Include="Core\Info\AttachmentInfo.cs" />
+    <Compile Include="Core\Info\AddendumInfo.cs" />
+    <Compile Include="Core\Info\AttachmentsGroupInfo.cs" />
+    <Compile Include="Core\Info\BudgetInfo.cs" />
+    <Compile Include="Core\Info\GeneralInductionInfo.cs" />
+    <Compile Include="Core\Info\KPIRangeInfo.cs" />
+    <Compile Include="Core\Info\MeetingMinutesInfo.cs" />
+    <Compile Include="Core\Info\ProjectImage.cs" />
+    <Compile Include="Core\Info\ProjectTradesInfo.cs" />
+    <Compile Include="Core\Info\RFIsResponseInfo.cs" />
+    <Compile Include="Core\Info\SiteInductionInfo.cs" />
+    <Compile Include="Core\Info\QualificationInfo.cs" />
+    <Compile Include="Core\Info\SiteOrderApprovalsInfo.cs" />
+    <Compile Include="Core\Info\SiteOrderDetailInfo.cs" />
+    <Compile Include="Core\Info\SiteOrderApprovalSearchInfo.cs" />
+    <Compile Include="Core\Info\SiteOrderDocSearchInfo.cs" />
+    <Compile Include="Core\Info\SiteOrderDocInfo.cs" />
+    <Compile Include="Core\Info\SiteOrderInfo.cs" />
+    <Compile Include="Core\Info\TenantVariationInfo.cs" />
+    <Compile Include="Core\Info\TradeBudgetInfo.cs" />
+    <Compile Include="Core\Info\ReversalInfo.cs" />
+    <Compile Include="Core\Info\SeparateAccountInfo.cs" />
+    <Compile Include="Core\Info\EOTInfo.cs" />
+    <Compile Include="Core\Info\InvitationTemplateInfo.cs" />
+    <Compile Include="Core\Info\MinutesTemplateInfo.cs" />
+    <Compile Include="Core\Info\ParticipationItemInfo.cs" />
+    <Compile Include="Core\Info\ProcessInfo.cs" />
+    <Compile Include="Core\Info\ProcessStepInfo.cs" />
+    <Compile Include="Core\Info\ProcessTemplateInfo.cs" />
+    <Compile Include="Core\Info\RFIInfo.cs" />
+    <Compile Include="Core\Info\TradeTemplateInfo.cs" />
+    <Compile Include="Core\Info\TransmittalInfo.cs" />
+    <Compile Include="Core\Info\TransmittalRevisionInfo.cs" />
+    <Compile Include="Core\Info\VariationInfo.cs" />
+    <Compile Include="Core\Instrumentation.cs" />
+    <Compile Include="Core\Interfaces\IBudget.cs" />
+    <Compile Include="Core\Interfaces\IClaimDetail.cs" />
+    <Compile Include="Core\Interfaces\IDocumentable.cs" />
+    <Compile Include="Core\Interfaces\ISortable.cs" />
+    <Compile Include="Core\ProcessStatus.cs" />
+    <Compile Include="Core\Utilities\BudgetComparer.cs" />
+    <Compile Include="Reports\BidsChart.cs" />
+    <Compile Include="Core\Security.cs" />
+    <Compile Include="Core\SecurityException.cs" />
+    <Compile Include="Core\SessionException.cs" />
+    <Compile Include="Data\DataProvider.cs" />
+    <Compile Include="Core\Info\DrawingInfo.cs" />
+    <Compile Include="Core\Info\DrawingRevisionInfo.cs" />
+    <Compile Include="Core\Info\DrawingTypeInfo.cs" />
+    <Compile Include="Core\Info\EmployeeInfo.cs" />
+    <Compile Include="Core\Info\Info.cs" />
+    <Compile Include="Core\Info\JobTypeInfo.cs" />
+    <Compile Include="Core\Info\PeopleInfo.cs" />
+    <Compile Include="Core\Info\ProjectInfo.cs" />
+    <Compile Include="Core\Info\SubContractorInfo.cs" />
+    <Compile Include="Core\Info\TradeItemCategoryInfo.cs" />
+    <Compile Include="Core\Info\TradeItemInfo.cs" />
+    <Compile Include="Core\Info\TradeParticipationInfo.cs" />
+    <Compile Include="Core\Info\TradeInfo.cs" />
+    <Compile Include="Core\Utils.cs" />
+    <Compile Include="Data\Utils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\CompletedTask.cs" />
+    <Compile Include="Reports\ProjectSnapshot.cs" />
+    <Compile Include="Reports\WorkOrder.cs" />
+    <Compile Include="Reports\TaskTotal.cs" />
+    <Compile Include="Reports\UserActivity.cs" />
+    <Compile Include="Reports\PendingTask.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="UI\HTTPGetSearch.cs" />
+    <Compile Include="UI\SearchClientCSharpe.cs" />
+    <Compile Include="UI\Utils.cs" />
+    <Compile Include="Web\SOSPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ABCpdf.chm" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Webapp\Modules\Projects\Controls\Controls\BalanceInclude.ascx">
+      <Link>BalanceInclude.ascx</Link>
+    </Content>
+    <Content Include="ABCpdfQuickStart.txt" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr100.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr100.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\ABCpdf.11.3.09\build\ABCpdf.targets" Condition="Exists('..\packages\ABCpdf.11.3.09\build\ABCpdf.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\ABCpdf.11.3.09\build\ABCpdf.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ABCpdf.11.3.09\build\ABCpdf.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

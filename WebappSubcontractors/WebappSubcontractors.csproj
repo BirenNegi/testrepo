@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E32D9E79-7684-4C80-85A6-73DFA0AD0F70}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SOS</RootNamespace>
+    <AssemblyName>WebappSubcontractors</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60623\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60623\lib\40\SanitizerProviders\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\SharpZipLib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="SanitizerProviders">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60623\lib\40\SanitizerProviders\SanitizerProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Webapp\Default.aspx">
+      <Link>Default.aspx</Link>
+    </Content>
+    <Content Include="..\Webapp\Modules\Core\Controls\BooleanReader.ascx">
+      <Link>Modules\Core\Controls\BooleanReader.ascx</Link>
+    </Content>
+    <Content Include="..\Webapp\Modules\Core\Controls\BooleanViewer.ascx">
+      <Link>Modules\Core\Controls\BooleanViewer.ascx</Link>
+    </Content>
+    <Content Include="..\Webapp\Modules\Core\Controls\ComboAndTextReader.ascx">
+      <Link>Modules\Core\Controls\ComboAndTextReader.ascx</Link>
+    </Content>
+    <Content Include="..\Webapp\Modules\Core\Controls\DateReader.ascx">
+      <Link>Modules\Core\Controls\DateReader.ascx</Link>
+    </Content>
+    <Content Include="..\Webapp\Modules\Core\Controls\DiaplayOrderReader.ascx">
+      <Link>Modules\Core\Controls\DiaplayOrderReader.ascx</Link>
+    </Content>
+    <Content Include="..\Webapp\Modules\Core\Controls\ErrorMessage.ascx">
+      <Link>Modules\Core\Controls\ErrorMessage.ascx</Link>
+    </Content>
+    <Content Include="..\Webapp\Modules\Core\Controls\FileLabel.ascx">
+      <Link>Modules\Core\Controls\FileLabel.ascx</Link>
+    </Content>
+    <Content Include="..\Webapp\Modules\Core\Controls\FileLink.ascx">
+      <Link>Modules\Core\Controls\FileLink.ascx</Link>
+    </Content>
+    <Content Include="..\Webapp\Modules\Core\Controls\FileSelect.ascx">
+      <Link>Modules\Core\Controls\FileSelect.ascx</Link>
+    </Content>
+    <Content Include="..\Webapp\Modules\Core\Controls\GridPageSize.ascx">
+      <Link>Modules\Core\Controls\GridPageSize.ascx</Link>
+    </Content>
+    <Content Include="..\Webapp\Modules\Core\Controls\TitleBar.ascx">
+      <Link>Modules\Core\Controls\TitleBar.ascx</Link>
+    </Content>
+    <Content Include="Config\StyleSheet.css" />
+    <Content Include="Images\1x1.gif" />
+    <Content Include="Images\BackNote.gif" />
+    <Content Include="Images\BackTest.gif" />
+    <Content Include="Images\Draft.png" />
+    <Content Include="Images\IconAdd.gif" />
+    <Content Include="Images\IconCalendar.gif" />
+    <Content Include="Images\IconChecked.gif" />
+    <Content Include="Images\IconCollapse.jpg" />
+    <Content Include="Images\IconConfirmed.gif" />
+    <Content Include="Images\IconCopy.gif" />
+    <Content Include="Images\IconDelete.gif" />
+    <Content Include="Images\IconDocument.gif" />
+    <Content Include="Images\IconDown.gif" />
+    <Content Include="Images\IconDownDirection.png" />
+    <Content Include="Images\IconDownload.gif" />
+    <Content Include="Images\IconEdit.gif" />
+    <Content Include="Images\IconEmail.gif" />
+    <Content Include="Images\IconExpand.jpg" />
+    <Content Include="Images\IconPhone.png" />
+    <Content Include="Images\IconPrint.gif" />
+    <Content Include="Images\IconSearch.gif" />
+    <Content Include="Images\IconUnchecked.gif" />
+    <Content Include="Images\IconUp.gif" />
+    <Content Include="Images\IconUpDirection.png" />
+    <Content Include="Images\IconView.gif" />
+    <Content Include="Images\IconZip.png" />
+    <Content Include="Images\LeftCorner.gif" />
+    <Content Include="Images\Progress.gif" />
+    <Content Include="Images\RightCorner.gif" />
+    <Content Include="Images\Signatures\arojas.gif" />
+    <Content Include="Images\Signatures\asutherland.gif" />
+    <Content Include="Images\Signatures\Signature.gif" />
+    <Content Include="Images\VaughanBackground.gif" />
+    <Content Include="Images\VaughanLogo.gif" />
+    <Content Include="Images\VaughanLogoPrint.gif" />
+    <Content Include="Images\VaughanLogoSmall.gif" />
+    <Content Include="Images\VaughanName.gif" />
+    <Content Include="JavaScript\FormsUtils.js" />
+    <Content Include="JavaScript\JavaScript.js" />
+    <Content Include="JavaScript\ProcessStatus.js" />
+    <None Include="JQuery\jquery-1.7-vsdoc.js" />
+    <Content Include="JQuery\jquery-1.7.1.js" />
+    <Content Include="Modules\Contracts\ShowContract.aspx" />
+    <Content Include="Modules\Contracts\ViewDraftContract.aspx" />
+    <Content Include="Modules\Core\ChangePassword.aspx" />
+    <Content Include="Modules\Core\Error.aspx" />
+    <Content Include="Modules\Core\Login.aspx" />
+    <Content Include="Modules\Core\SendPassword.aspx" />
+    <Content Include="Modules\Help\Help.aspx" />
+    <Content Include="Modules\People\CreateAccountContact.aspx" />
+    <Content Include="Modules\People\EditContact.aspx" />
+    <Content Include="Modules\People\EditSubcontractorQualifications.aspx" />
+    <Content Include="Modules\People\SearchContacts.aspx" />
+    <Content Include="Modules\People\ViewContact.aspx" />
+    <Content Include="Modules\Projects\Controls\ComparisonCheck.ascx" />
+    <Content Include="Modules\Projects\Controls\ComparisonEdit.ascx" />
+    <Content Include="Modules\Projects\Controls\ComparisonView.ascx" />
+    <Content Include="Modules\Projects\Controls\Controls\BalanceInclude.ascx" />
+    <Content Include="Modules\Projects\Controls\FilterSelector.ascx" />
+    <Content Include="Modules\Projects\Controls\ProcessManager.ascx" />
+    <Content Include="Modules\Projects\Controls\QuoteDrawingsView.ascx" />
+    <Content Include="Modules\Projects\Controls\TradeBudget.ascx" />
+    <Content Include="Modules\Projects\EditParticipation.aspx" />
+    <Content Include="Modules\Projects\EditParticipationItem.aspx" />
+    <Content Include="Modules\Projects\SearchParticipationsSubContractor.aspx" />
+    <Content Include="Modules\Projects\ShowCheckList.aspx" />
+    <Content Include="Modules\Projects\ShowDrawingRevision.aspx" />
+    <Content Include="Modules\Projects\ShowInvitation.aspx" />
+    <Content Include="Modules\Projects\ShowQuote.aspx" />
+    <Content Include="Modules\Projects\ShowQuoteFile.aspx" />
+    <Content Include="Modules\Projects\ShowTransmittal.aspx" />
+    <Content Include="Modules\Projects\UploadQuoteFile.aspx" />
+    <Content Include="Modules\Projects\ViewParticipationSubContractor.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Webapp\Default.aspx.cs">
+      <Link>Default.aspx.cs</Link>
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\Webapp\Default.aspx.designer.cs">
+      <Link>Default.aspx.designer.cs</Link>
+      <DependentUpon>Default.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\BooleanReader.ascx.cs">
+      <Link>Modules\Core\Controls\BooleanReader.ascx.cs</Link>
+      <DependentUpon>BooleanReader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\BooleanReader.ascx.designer.cs">
+      <Link>Modules\Core\Controls\BooleanReader.ascx.designer.cs</Link>
+      <DependentUpon>BooleanReader.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\BooleanViewer.ascx.cs">
+      <Link>Modules\Core\Controls\BooleanViewer.ascx.cs</Link>
+      <DependentUpon>BooleanViewer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\BooleanViewer.ascx.designer.cs">
+      <Link>Modules\Core\Controls\BooleanViewer.ascx.designer.cs</Link>
+      <DependentUpon>BooleanViewer.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\ComboAndTextReader.ascx.cs">
+      <Link>Modules\Core\Controls\ComboAndTextReader.ascx.cs</Link>
+      <DependentUpon>ComboAndTextReader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\ComboAndTextReader.ascx.designer.cs">
+      <Link>Modules\Core\Controls\ComboAndTextReader.ascx.designer.cs</Link>
+      <DependentUpon>ComboAndTextReader.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\DateReader.ascx.cs">
+      <Link>Modules\Core\Controls\DateReader.ascx.cs</Link>
+      <DependentUpon>DateReader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\DateReader.ascx.designer.cs">
+      <Link>Modules\Core\Controls\DateReader.ascx.designer.cs</Link>
+      <DependentUpon>DateReader.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\DiaplayOrderReader.ascx.cs">
+      <Link>Modules\Core\Controls\DiaplayOrderReader.ascx.cs</Link>
+      <DependentUpon>DiaplayOrderReader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\DiaplayOrderReader.ascx.designer.cs">
+      <Link>Modules\Core\Controls\DiaplayOrderReader.ascx.designer.cs</Link>
+      <DependentUpon>DiaplayOrderReader.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\ErrorMessage.ascx.cs">
+      <Link>Modules\Core\Controls\ErrorMessage.ascx.cs</Link>
+      <DependentUpon>ErrorMessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\ErrorMessage.ascx.designer.cs">
+      <Link>Modules\Core\Controls\ErrorMessage.ascx.designer.cs</Link>
+      <DependentUpon>ErrorMessage.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\FileLabel.ascx.cs">
+      <Link>Modules\Core\Controls\FileLabel.ascx.cs</Link>
+      <DependentUpon>FileLabel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\FileLabel.ascx.designer.cs">
+      <Link>Modules\Core\Controls\FileLabel.ascx.designer.cs</Link>
+      <DependentUpon>FileLabel.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\FileLink.ascx.cs">
+      <Link>Modules\Core\Controls\FileLink.ascx.cs</Link>
+      <DependentUpon>FileLink.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\FileLink.ascx.designer.cs">
+      <Link>Modules\Core\Controls\FileLink.ascx.designer.cs</Link>
+      <DependentUpon>FileLink.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\FileSelect.ascx.cs">
+      <Link>Modules\Core\Controls\FileSelect.ascx.cs</Link>
+      <DependentUpon>FileSelect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\FileSelect.ascx.designer.cs">
+      <Link>Modules\Core\Controls\FileSelect.ascx.designer.cs</Link>
+      <DependentUpon>FileSelect.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\GridPageSize.ascx.cs">
+      <Link>Modules\Core\Controls\GridPageSize.ascx.cs</Link>
+      <DependentUpon>GridPageSize.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\GridPageSize.ascx.designer.cs">
+      <Link>Modules\Core\Controls\GridPageSize.ascx.designer.cs</Link>
+      <DependentUpon>GridPageSize.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\TitleBar.ascx.cs">
+      <Link>Modules\Core\Controls\TitleBar.ascx.cs</Link>
+      <DependentUpon>TitleBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\Webapp\Modules\Core\Controls\TitleBar.ascx.designer.cs">
+      <Link>Modules\Core\Controls\TitleBar.ascx.designer.cs</Link>
+      <DependentUpon>TitleBar.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Subbie.master.cs">
+      <DependentUpon>Subbie.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Subbie.master.designer.cs">
+      <DependentUpon>Subbie.master</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Contracts\ShowContract.aspx.cs">
+      <DependentUpon>ShowContract.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Contracts\ShowContract.aspx.designer.cs">
+      <DependentUpon>ShowContract.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Contracts\ViewDraftContract.aspx.cs">
+      <DependentUpon>ViewDraftContract.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Contracts\ViewDraftContract.aspx.designer.cs">
+      <DependentUpon>ViewDraftContract.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\SendPassword.aspx.cs">
+      <DependentUpon>SendPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\SendPassword.aspx.designer.cs">
+      <DependentUpon>SendPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Help\Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Help\Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\People\CreateAccountContact.aspx.cs">
+      <DependentUpon>CreateAccountContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\People\CreateAccountContact.aspx.designer.cs">
+      <DependentUpon>CreateAccountContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\People\EditContact.aspx.cs">
+      <DependentUpon>EditContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\People\EditContact.aspx.designer.cs">
+      <DependentUpon>EditContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\People\EditSubcontractorQualifications.aspx.cs">
+      <DependentUpon>EditSubcontractorQualifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\People\EditSubcontractorQualifications.aspx.designer.cs">
+      <DependentUpon>EditSubcontractorQualifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\People\SearchContacts.aspx.cs">
+      <DependentUpon>SearchContacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\People\SearchContacts.aspx.designer.cs">
+      <DependentUpon>SearchContacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\People\ViewContact.aspx.cs">
+      <DependentUpon>ViewContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\People\ViewContact.aspx.designer.cs">
+      <DependentUpon>ViewContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ComparisonCheck.ascx.cs">
+      <DependentUpon>ComparisonCheck.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ComparisonCheck.ascx.designer.cs">
+      <DependentUpon>ComparisonCheck.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ComparisonEdit.ascx.cs">
+      <DependentUpon>ComparisonEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ComparisonEdit.ascx.designer.cs">
+      <DependentUpon>ComparisonEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ComparisonView.ascx.cs">
+      <DependentUpon>ComparisonView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ComparisonView.ascx.designer.cs">
+      <DependentUpon>ComparisonView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\Controls\BalanceInclude.ascx.cs">
+      <DependentUpon>BalanceInclude.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\Controls\BalanceInclude.ascx.designer.cs">
+      <DependentUpon>BalanceInclude.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\FilterSelector.ascx.cs">
+      <DependentUpon>FilterSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\FilterSelector.ascx.designer.cs">
+      <DependentUpon>FilterSelector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ProcessManager.ascx.cs">
+      <DependentUpon>ProcessManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\ProcessManager.ascx.designer.cs">
+      <DependentUpon>ProcessManager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\QuoteDrawingsView.ascx.cs">
+      <DependentUpon>QuoteDrawingsView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\QuoteDrawingsView.ascx.designer.cs">
+      <DependentUpon>QuoteDrawingsView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\TradeBudget.ascx.cs">
+      <DependentUpon>TradeBudget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\Controls\TradeBudget.ascx.designer.cs">
+      <DependentUpon>TradeBudget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\EditParticipation.aspx.cs">
+      <DependentUpon>EditParticipation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\EditParticipation.aspx.designer.cs">
+      <DependentUpon>EditParticipation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\EditParticipationItem.aspx.cs">
+      <DependentUpon>EditParticipationItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\EditParticipationItem.aspx.designer.cs">
+      <DependentUpon>EditParticipationItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\SearchParticipationsSubContractor.aspx.cs">
+      <DependentUpon>SearchParticipationsSubContractor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\SearchParticipationsSubContractor.aspx.designer.cs">
+      <DependentUpon>SearchParticipationsSubContractor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowCheckList.aspx.cs">
+      <DependentUpon>ShowCheckList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowCheckList.aspx.designer.cs">
+      <DependentUpon>ShowCheckList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowDrawingRevision.aspx.cs">
+      <DependentUpon>ShowDrawingRevision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowDrawingRevision.aspx.designer.cs">
+      <DependentUpon>ShowDrawingRevision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowInvitation.aspx.cs">
+      <DependentUpon>ShowInvitation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowInvitation.aspx.designer.cs">
+      <DependentUpon>ShowInvitation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowQuote.aspx.cs">
+      <DependentUpon>ShowQuote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowQuote.aspx.designer.cs">
+      <DependentUpon>ShowQuote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowQuoteFile.aspx.cs">
+      <DependentUpon>ShowQuoteFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowQuoteFile.aspx.designer.cs">
+      <DependentUpon>ShowQuoteFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowTransmittal.aspx.cs">
+      <DependentUpon>ShowTransmittal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ShowTransmittal.aspx.designer.cs">
+      <DependentUpon>ShowTransmittal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\UploadQuoteFile.aspx.cs">
+      <DependentUpon>UploadQuoteFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\UploadQuoteFile.aspx.designer.cs">
+      <DependentUpon>UploadQuoteFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Projects\ViewParticipationSubContractor.aspx.cs">
+      <DependentUpon>ViewParticipationSubContractor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Projects\ViewParticipationSubContractor.aspx.designer.cs">
+      <DependentUpon>ViewParticipationSubContractor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\SOS.Config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Images\Signatures\Thumbs.db" />
+    <Content Include="Images\Thumbs.db" />
+    <Content Include="MasterPages\Subbie.master" />
+    <None Include="Properties\PublishProfiles\Default.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\CheckList.rdlc" />
+    <Content Include="Reports\Quote.rdlc" />
+    <Content Include="Reports\Transmittal.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FileTransfer\SOS.FileTransferService.Client\SOS.FileTransferService.Client.csproj">
+      <Project>{cdce4c4f-f03c-4a51-a003-e246d2b3dc3b}</Project>
+      <Name>SOS.FileTransferService.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOS.Library\SOS.Library.csproj">
+      <Project>{a6ca9954-8aec-4348-9508-73c97b788e72}</Project>
+      <Name>SOS.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\Help\Docs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1035</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1112/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  
+  <siteMapNode url="~/Modules/Core/Home.aspx" title="Home" description="Home">
+    <!-- Projects -->
+	  <siteMapNode url="~/Modules/SiteOrders/EditSiteOrderApprovalsAll.aspx" title="Site Order Approvals " description="View my Site Order Approvals " resourceKey="Projects" />
+	  <siteMapNode url="~/Modules/SiteOrders/SearchSiteOrdersUser.aspx" title="My Site Orders " description="View my Site Orders " resourceKey="Projects" />
+	  <siteMapNode url="~/Modules/SiteOrders/SearchSiteOrdersAll.aspx" title="All Site Orders " description="View All Site Orders " resourceKey="Projects" />
+	  <siteMapNode url="~/Modules/SiteOrders/SelectSiteOrderSub.aspx" title="SubContractor Site Orders " description="View SubContractor Site Orders " resourceKey="Projects" />
+	  <siteMapNode url="~/Modules/Projects/SearchProjects.aspx" title="Projects" description="Projects" resourceKey="Projects">
+          <siteMapNode url="~/Modules/Projects/EditProject.aspx" title="Edit Project" description="Edit Project" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/ViewProject.aspx" title="Project" description="Project" resourceKey="Projects">
+        <!-- Budget -->
+        <siteMapNode url="~/Modules/Projects/ViewBudgets.aspx" title="Budget" description="Budget" resourceKey="Projects" />
+
+        <!-- Client Trades -->
+        <siteMapNode url="~/Modules/Projects/ViewClientTrades.aspx" title="Client Trades" description="Client Trades" resourceKey="Projects" />
+
+
+        <!--San Site Induction-->   
+        <siteMapNode url="~/Modules/Induction/EditSiteInduction.aspx" title="Manage Site Induction" description="Site Induction" resourceKey="Projects"/>
+
+        <!-- Drawings/Transmittals -->
+        <siteMapNode url="~/Modules/Projects/ListDrawingsTransmittals.aspx" title="Drawings/Transmittals" description="Drawings/Transmittals" resourceKey="Projects">
+          <!-- Drawings -->
+          <siteMapNode url="~/Modules/Projects/ListDrawings.aspx" title="Drawings" description="Drawings" resourceKey="Projects">
+            <siteMapNode url="~/Modules/Projects/ViewDrawing.aspx" title="Drawing" description="Drawing" resourceKey="Projects">
+              <siteMapNode url="~/Modules/Projects/ViewDrawingRevision.aspx" title="Drawing Revision" description="Drawing Revision" resourceKey="Projects" />
+              <siteMapNode url="~/Modules/Projects/EditDrawingRevision.aspx" title="Drawing Revision" description="Drawing Revision" resourceKey="Projects" />
+            </siteMapNode>
+            <siteMapNode url="~/Modules/Projects/EditDrawing.aspx" title="Drawing" description="Drawing" resourceKey="Projects" />
+          </siteMapNode>
+
+          <!-- Transmittals -->
+          <siteMapNode url="~/Modules/Projects/ViewTransmittal.aspx" title="Transmittal" description="Transmittal" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/EditTransmittal.aspx" title="Transmittal" description="Transmittal" resourceKey="Projects" />
+        </siteMapNode>
+
+        <!-- Claims -->
+        <siteMapNode url="~/Modules/Projects/ListClaims.aspx" title="Claims" description="Claims" resourceKey="Projects" >
+          <siteMapNode url="~/Modules/Projects/ViewClaim.aspx" title="Claim" description="Claim" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/EditClaim.aspx" title="Claim" description="Claim" resourceKey="Projects" />
+        </siteMapNode>
+
+        <!-- RFIs -->
+        <siteMapNode url="~/Modules/Projects/ListRFIs.aspx" title="RFIs" description="RFIs" resourceKey="Projects" >
+          <siteMapNode url="~/Modules/Projects/ViewRFI.aspx" title="RFI" description="RFI" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/EditRFI.aspx" title="RFI" description="RFI" resourceKey="Projects" />
+          <!--#-->
+          <siteMapNode url="~/Modules/Projects/ViewRFINew.aspx" title="RFI Response View" description="RFI Response View" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/ReplyRFI.aspx" title="RFI" description="RFI" resourceKey="Projects" />
+          <!--#-->
+        </siteMapNode>
+
+        <!-- EOTs -->
+        <siteMapNode url="~/Modules/Projects/ListEOTs.aspx" title="EOTs" description="EOTs" resourceKey="Projects" >
+          <siteMapNode url="~/Modules/Projects/ViewEOT.aspx" title="EOT" description="EOT" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/EditEOT.aspx" title="EOT" description="EOT" resourceKey="Projects" />
+        </siteMapNode>
+
+        <!--San Manage Client Contact's Access -->
+        <siteMapNode url="~/Modules/People/EditClientContactAccess.aspx" title="Client Access " description="Client Access" resourceKey="Projects">
+          <siteMapNode url="~/Modules/People/CreateClientContactAccount.aspx" title=" Client Access Account" description="Client Access Account" resourceKey="Projects" />
+        </siteMapNode>
+
+        <!--San Meeting Minutes -->
+        <siteMapNode url="~/Modules/Projects/ListMeetingMinutes.aspx" title="Meeting Minutes " description="Meeting Minutes" resourceKey="Projects">
+          <siteMapNode url="~/Modules/Projects/ViewMeetingMinutes.aspx" title="Meeting Minute" description="Meeting Minute" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/EditMeetingMinutes.aspx" title="Meeting Minute" description="Meeting Minute" resourceKey="Projects" />
+        </siteMapNode>
+
+		<!--Site Orders -->
+			  <siteMapNode url="~/Modules/SiteOrders/SearchSiteOrders.aspx" title="Site Orders " description="View Site Orders" resourceKey="Projects" >
+				  <siteMapNode url="~/Modules/SiteOrders/ViewSiteOrder.aspx" title="Site Order " description="Site Order " resourceKey="Projects" >
+					  <siteMapNode url="~/Modules/SiteOrders/EditSiteOrder.aspx" title="Edit Site Order " description="Edit Site Order " resourceKey="Projects" />
+					  <siteMapNode url="~/Modules/SiteOrders/EditSiteOrderNS.aspx" title="Edit Site Order " description="Edit Site Order " resourceKey="Projects" />
+					  <siteMapNode url="~/Modules/SiteOrders/SearchSiteOrderDetail.aspx" title="Site Order Items " description="View Site Order Items " resourceKey="Projects" />
+					  <siteMapNode url="~/Modules/SiteOrders/EditSiteOrderDetail.aspx" title="Edit Site Order Item" description="Edit Site Order Item" resourceKey="Projects" />
+					  <siteMapNode url="~/Modules/SiteOrders/SearchSiteOrderDocs.aspx" title="Site Order Docs " description="View Site Order Docs " resourceKey="Projects" />
+					  <siteMapNode url="~/Modules/SiteOrders/EditSiteOrderApprovals.aspx" title="Site Order Approvals " description="View Site Order Approvals " resourceKey="Projects" />
+					  
+				  </siteMapNode>
+				  <siteMapNode url="~/Modules/SiteOrders/ViewSiteOrderInst.aspx" title="Site Order " description="Site Order " resourceKey="Projects" >
+					  <siteMapNode url="~/Modules/SiteOrders/EditSiteOrderInst.aspx" title="Edit Site Order " description="Edit Site Order " resourceKey="Projects" />
+					  <siteMapNode url="~/Modules/SiteOrders/EditSiteOrderInstNS.aspx" title="Edit Site Order " description="Edit Site Order " resourceKey="Projects" />
+					  <siteMapNode url="~/Modules/SiteOrders/SearchSiteOrderDetailInst.aspx" title="Site Order Items " description="View Site Order Items " resourceKey="Projects" />
+					  <siteMapNode url="~/Modules/SiteOrders/EditSiteOrderDetailInst.aspx" title="Edit Site Order Item" description="Edit Site Order Item" resourceKey="Projects" />
+				  </siteMapNode>
+				  <siteMapNode url="~/Modules/SiteOrders/ViewSiteOrderHire.aspx" title="Site Order " description="Site Order " resourceKey="Projects" >
+					  <siteMapNode url="~/Modules/SiteOrders/EditSiteOrderHire.aspx" title="Edit Site Order " description="Edit Site Order " resourceKey="Projects" />
+					  <siteMapNode url="~/Modules/SiteOrders/EditSiteOrderHireNS.aspx" title="Edit Site Order " description="Edit Site Order " resourceKey="Projects" />
+					  <siteMapNode url="~/Modules/SiteOrders/SearchSiteOrderDetailHire.aspx" title="Site Order Items " description="View Site Order Items " resourceKey="Projects" />
+					  <siteMapNode url="~/Modules/SiteOrders/EditSiteOrderDetailHire.aspx" title="Edit Site Order Item" description="Edit Site Order Item" resourceKey="Projects" />
+				  </siteMapNode>
+
+			  </siteMapNode>
+
+        
+
+
+        <!-- Trades -->
+        <siteMapNode url="~/Modules/Projects/EditProjectTrade.aspx" title="Trade" description="Trade" resourceKey="Projects" />
+        <siteMapNode url="~/Modules/Projects/ViewProjectTrade.aspx" title="Trade" description="Trade" resourceKey="Projects">
+          <siteMapNode url="~/Modules/Projects/ViewProjectTradeItemCategory.aspx" title="Trade Item Category" description="Trade Item Category" resourceKey="Projects">
+            <siteMapNode url="~/Modules/Projects/ViewProjectTradeItem.aspx" title="Trade Item" description="Trade Item" resourceKey="Projects" />
+            <siteMapNode url="~/Modules/Projects/EditProjectTradeItem.aspx" title="Trade Item" description="Trade Item" resourceKey="Projects" />
+          </siteMapNode>
+          <siteMapNode url="~/Modules/Projects/ViewComparison.aspx" title="Comparison" description="Comparison" resourceKey="Projects">
+            <siteMapNode url="~/Modules/Projects/EditParticipationItem.aspx" title="Item" description="Item" resourceKey="Projects" />
+          </siteMapNode>
+          <siteMapNode url="~/Modules/Projects/EditComparison.aspx" title="Comparison" description="Comparison" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/ViewParticipation.aspx" title="Subcontractor" description="Subcontractor" resourceKey="Projects" >
+            <siteMapNode url="~/Modules/Projects/ViewInvitation.aspx" title="Invitation to Tender" description="Invitation to Tender" resourceKey="Projects" />
+          </siteMapNode>
+          <siteMapNode url="~/Modules/Projects/EditParticipation.aspx" title="Subcontractor" description="Subcontractor" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/EditProjectTradeItemCategory.aspx" title="Trade Item Category" description="Trade Item Category" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Contracts/CreateContract.aspx" title="Contract" description="Contract" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/ViewMinutes.aspx" title="Order Letting Minutes" description="Order Letting Minutes" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/ViewAddendum.aspx" title="Addendum" description="Addendum" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/EditAddendum.aspx" title="Addendum" description="Addendum" resourceKey="Projects" />
+
+          <!--#-->
+          <siteMapNode url="~/Modules/Projects/EditItemCategories_Items_ScopeOfWork.aspx" title="Trade Item Categories and Items" description="Trade Item Categories and Items" resourceKey="Projects" />
+          <!--#-->
+
+          <!-- Contracts -->
+          <siteMapNode url="~/Modules/Contracts/ViewContract.aspx" title="Contract" description="Contract" resourceKey="Projects">
+            <siteMapNode url="~/Modules/Contracts/EditContract.aspx" title="Contract Section" description="Contract Section" resourceKey="Projects" />
+            <siteMapNode url="~/Modules/Contracts/ViewContractSection.aspx" title="Contract Section" description="Contract Section" resourceKey="Projects" />
+            <siteMapNode url="~/Modules/Contracts/ListSubContracts.aspx" title="Variation Orders" description="Variation Orders" resourceKey="Projects">
+              <siteMapNode url="~/Modules/Contracts/ViewSubContract.aspx" title="Variation Order" description="Variation Order" resourceKey="Projects">
+                <siteMapNode url="~/Modules/Contracts/EditVariation.aspx" title="Variation" description="Variation" resourceKey="Projects" />
+              </siteMapNode>
+              <siteMapNode url="~/Modules/Contracts/EditSubContract.aspx" title="Variation Order" description="Variation Order" resourceKey="Projects" />
+            </siteMapNode>
+          </siteMapNode>
+        </siteMapNode>
+
+        <!-- Client Variations -->
+        <siteMapNode url="~/Modules/Projects/ListClientVariations.aspx" title="Client Variations" description="Client Variations" resourceKey="Projects">
+          <siteMapNode url="~/Modules/Projects/ViewClientVariation.aspx" title="Client Variation" description="Client Variation" resourceKey="Projects" />
+          <siteMapNode url="~/Modules/Projects/EditClientVariation.aspx" title="Client Variation" description="Client Variation" resourceKey="Projects" />
+        </siteMapNode>
+      
+        <siteMapNode url="~/Modules/Projects/EditProjectFiles.aspx" title="Project Files" description="Project Files" resourceKey="Projects" />
+        
+      </siteMapNode>
+    </siteMapNode>
+    
+    
+  
+        
+    <!-- Trade templates -->
+    <siteMapNode url="~/Modules/Trades/ListTradeTemplates.aspx" title="Trade Templates" description="Trade Templates" resourceKey="Admin">
+      <siteMapNode url="~/Modules/Trades/ViewTradeTemplate.aspx" title="Trade Template" description="Trade Template" resourceKey="Admin">
+        <siteMapNode url="~/Modules/Trades/ViewTradeItemCategory.aspx" title="Trade Item Category" description="Trade Item Category" resourceKey="Admin">
+          <siteMapNode url="~/Modules/Trades/ViewTradeItem.aspx" title="Trade Item" description="Trade Item" resourceKey="Admin" />
+          <siteMapNode url="~/Modules/Trades/EditTradeItem.aspx" title="Trade Item" description="Trade Item" resourceKey="Admin" />
+        </siteMapNode>
+        <siteMapNode url="~/Modules/Trades/EditTradeItemCategory.aspx" title="Trade Item Category" description="Trade Item Category" resourceKey="Admin" />
+      </siteMapNode>
+      <siteMapNode url="~/Modules/Trades/EditTradeTemplate.aspx" title="Trade Template" description="Trade Template" resourceKey="Admin" />
+    </siteMapNode>
+
+    <!-- Business units -->
+    <siteMapNode url="~/Modules/Contracts/ListBusinessUnits.aspx" title="Business Units" description="Business Units" resourceKey="Admin">
+      <siteMapNode url="~/Modules/Contracts/EditBusinessUnit.aspx" title="Business Unit" description="Business Unit" resourceKey="Admin" />
+      <!--#-->
+      <siteMapNode url="~/Modules/Contracts/EditContractApprovalLimit.aspx" title="Edit Contract Approval Limit" description="Contract Approval Limit" resourceKey="Admin" />
+      <!--#-->
+    </siteMapNode>
+
+    <!-- Job types -->
+    <siteMapNode url="~/Modules/Contracts/ListJobTypes.aspx" title="Job Types" description="Job Types" resourceKey="Admin">
+      <siteMapNode url="~/Modules/Contracts/EditJobType.aspx" title="Job Type" description="Job Type" resourceKey="Admin" />
+    </siteMapNode>
+
+    <!-- Contract Templates -->
+    <siteMapNode url="~/Modules/Contracts/ListContractTemplates.aspx" title="Contract Templates" description="Contract Templates" resourceKey="Admin">
+      <siteMapNode url="~/Modules/Contracts/ViewContractTemplate.aspx" title="Contract Template" description="Contract Template" resourceKey="Admin" />
+      <siteMapNode url="~/Modules/Contracts/EditContractTemplate.aspx" title="Contract Template" description="Contract Template" resourceKey="Admin" />
+    </siteMapNode>
+
+    
+    <!-- Minutes Templates -->
+    <siteMapNode url="~/Modules/Trades/ViewMinutesTemplate.aspx" title="Minutes Template" description="Minutes Template" resourceKey="Admin"/>
+    <siteMapNode url="~/Modules/Trades/EditMinutesTemplate.aspx" title="Minutes Template" description="Minutes Template" resourceKey="Admin"/>
+
+    <!-- Invitation Templates -->
+    <siteMapNode url="~/Modules/Trades/ViewInvitationTemplate.aspx" title="Invitation to Tender Template" description="Invitation to Tender Template" resourceKey="Admin"/>
+    <siteMapNode url="~/Modules/Trades/EditInvitationTemplate.aspx" title="Invitation to Tender Template" description="Invitation to Tender Template" resourceKey="Admin"/>
+
+    <!-- Drawing types -->
+    <siteMapNode url="~/Modules/Trades/ListDrawingTypes.aspx" title="Drawing Types" description="Drawing Types" resourceKey="Admin">
+      <siteMapNode url="~/Modules/Trades/EditDrawingType.aspx" title="Drawing Type" description="Drawing Type" resourceKey="Admin" />
+    </siteMapNode>
+
+    <!-- Client Trade types -->
+    <siteMapNode url="~/Modules/Trades/ListClientTradeTypes.aspx" title="Client Trade Types" description="Client Trade Types" resourceKey="Admin">
+      <siteMapNode url="~/Modules/Trades/EditClientTradeType.aspx" title="Client Trade Type" description="Client Trade Type" resourceKey="Admin" />
+    </siteMapNode>
+
+    <!-- Holidays -->
+    <siteMapNode url="~/Modules/Trades/ListHolidays.aspx" title="Holidays" description="Holidays" resourceKey="Admin" />
+
+    <!-- RDOs -->
+    <siteMapNode url="~/Modules/Trades/ListRDOs.aspx" title="RDOs" description="RDOs" resourceKey="Admin" />
+
+    <!-- Subcontractors -->
+    <siteMapNode url="~/Modules/SubContractors/SearchSubContractors.aspx" title="Subcontractors" description="Subcontractors" resourceKey="Subcontractors">
+      <siteMapNode url="~/Modules/SubContractors/ViewSubcontractor.aspx" title="Subcontractor" description="Subcontractor" resourceKey="Subcontractors" />
+      <siteMapNode url="~/Modules/SubContractors/EditSubcontractor.aspx" title="Subcontractor" description="Subcontractor" resourceKey="Subcontractors" />
+      <siteMapNode url="~/Modules/People/SearchContacts.aspx" title="Subcontractors Contacts" description="Subcontractors Contacts" resourceKey="Subcontractors">
+        <siteMapNode url="~/Modules/People/ViewContact.aspx" title="Contact" description="Contact" resourceKey="Subcontractors">
+          <siteMapNode url="~/Modules/People/CreateAccountContact.aspx" title="Access Account" description="Access Account" resourceKey="Subcontractors" />
+         
+          
+          <!--#-->
+          <siteMapNode url="~/Modules/SubContractors/EditSubcontractorQualifications.aspx" title="Subcontractor's Certificates/Qualifications" description="Subcontractor Qualifications" resourceKey="Subcontractors" /><!--#-->
+          
+        </siteMapNode>
+        <siteMapNode url="~/Modules/People/EditContact.aspx" title="Subcontractor Contact" description="Subcontractor Contact" resourceKey="Subcontractors" />
+        
+      </siteMapNode>
+    </siteMapNode>
+
+    <!-- Staff -->
+    <siteMapNode url="~/Modules/People/SearchEmployees.aspx" title="Staff" description="Staff" resourceKey="People">
+      <siteMapNode url="~/Modules/People/ViewEmployee.aspx" title="Staff Member" description="Staff Member" resourceKey="People">
+        <siteMapNode url="~/Modules/People/CreateAccountEmployee.aspx" title="Access Account" description="Access Account" resourceKey="People" />
+      </siteMapNode>
+      <siteMapNode url="~/Modules/People/EditEmployee.aspx" title="Staff Member" description="Staff Member" resourceKey="People" />
+    </siteMapNode>
+
+    <!-- Help -->
+    <siteMapNode url="~/Modules/Help/Help.aspx" title="Help" description="User Guide" resourceKey="Help"/>
+
+    <!-- Reports -->
+    <siteMapNode url="~/Modules/Core/ListReports.aspx" title="Reports" description="Reports" resourceKey="Reports">
+      <siteMapNode url="~/Modules/Projects/ReportPendingTasks.aspx" title="Pending Tasks" description="Pending Tasks" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportCompletedTasks.aspx" title="Completed Tasks" description="Completed Tasks" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportActivitySummary.aspx" title="Activity Summary Projects" description="Activity Summary" resourceKey="Reports" />
+    
+      <!--#-->
+      <siteMapNode url="~/Modules/Projects/ReportActivitySummaryStaff.aspx" title="Activity Summary Staff" description="Activity Summary Staff" resourceKey="Reports" />
+
+      <siteMapNode url="~/Modules/Projects/ReportBidsChart.aspx" title="Bids Chart" description="Bids Chart" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportPurchaseSchedule.aspx" title="Purchasing Schedule" description="Purchasing Schedule" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportSitePurchaseSchedule.aspx" title="Site Purchasing Schedule" description="Site Purchasing Schedule" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportRFIs.aspx" title="RFIs" description="RFIs" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportEOTs.aspx" title="EOTs" description="EOTs" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportWorkOrders.aspx" title="Work Orders (Old)" description="Work Orders (Old)" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportWorkOrdersNew.aspx" title="Work Orders" description="Work Orders" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportCVsProject.aspx" title="Client Variations" description="Client Variations" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportCVsStatus.aspx" title="Client Variations Status" description="Client Variations Status" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportCVs.aspx" title="Client Variations Summary" description="Client Variations Summary" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportSAs.aspx" title="Separate Accounts" description="Separate Accounts" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportClaims.aspx" title="Progress Claims" description="Progress Claims" resourceKey="Reports" />
+      <!--#-->
+      <siteMapNode url="~/Modules/Projects/ReportSubcontractorsMissingInsurance.aspx" title="Subcontractors Missing Insurance" description="SubcontractorsMissingInsurance" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportSubcontractorVariation.aspx" title="Subcontractor Variation" description="ReportSubcontractorVariation" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportRatingA_Allsubcontractors.aspx" title="Rating A Subcontractors" description="RatingA_Allsubcontractors" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportRatingAsubcontractors.aspx" title="Rating A Subcontractors by Trade" description="RatingA_AllsubcontractorsbyTrade" resourceKey="Reports" />
+
+
+      <siteMapNode url="~/Modules/Projects/ShowBudgetTradeSummary.aspx" title="Budget Trade Summary.aspx" description="Budget Trade Summary" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ShowCVsSummary.aspx" title="Client Variations summary" description="Client Variations summary" resourceKey="Reports" />
+      <siteMapNode url="~/Modules/Projects/ReportProjectContacts.aspx" title="Project Contacts" description="Project Contacts" resourceKey="Reports" />
+
+      <!--#-->
+    </siteMapNode>
+
+    <!-- Files Links -->
+    <siteMapNode url="~/Modules/Projects/UpdateFilesLinks.aspx" title="Files Links" description="Files Links" resourceKey="Admin" />
+
+    <!-- Change Password -->
+    <siteMapNode url="~/Modules/Core/ChangePassword.aspx" title="User Info" description="User Info" />
+
+    <!-- General Induction -->
+    <siteMapNode url="~/Modules/Induction/GeneralInduction.aspx" title="Manage General Induction" description="General Induction" resourceKey="Projects"/>	  
+
+  </siteMapNode>
+  
+  
+  
+</siteMap>

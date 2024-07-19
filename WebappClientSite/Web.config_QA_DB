@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  For more information on how to configure your ASP.NET application, please visit
+  http://go.microsoft.com/fwlink/?LinkId=169433
+  -->
+<configuration>
+  <!--San-->
+  <connectionStrings>
+    <add name="SOSTestConnectionString" connectionString="Data Source=VC-SQL-02;Initial Catalog=SOS;User ID=SOSApp;Password=V@ugh@ns;" providerName="System.Data.SqlClient" />
+    <add name="SOSTestConnectionString2" connectionString="Data Source=VC-SQL-02;Initial Catalog=SOS;User ID=SOSApp;Password=V@ugh@ns" providerName="System.Data.SqlClient" />
+    <add name="SOSConnectionString" connectionString="Data Source=VC-SQL-02;Initial Catalog=SOS;Integrated Security=True" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <!--San-->
+  <appSettings>
+    <add key="ConnectionString" value="Server=VC-SQL-02;Database=SOS;uid=SOSApp;pwd=V@ugh@ns;" />
+    <add key="BaseUrl" value="http://localhost:53569" />
+    <add key="DefaultMedia" value="A4" />
+    <add key="EmailSmtpServer" value="192.168.1.105" />
+    <add key="EmailFrom" value="Administrator@sos.loc" />
+    <add key="EmailRedirect" value="santosh.Nayak@vaughans.com.au" />
+    <add key="EmailSupport" value="santosh.Nayak@vaughans.com.au" />
+    <add key="QuotesFilesFolder" value="QuotesFiles" />
+    <add key="owin:AutomaticAppStartup" value="false" />
+    <add key="DocumentsFolder" value="\\vc-exchange-03.vaughans.com.au\Jobs" />
+    <!--San-->
+    <add key="RFIsResponseFolder" value="\RFIsResponse" />
+    <!--San-->
+  </appSettings>
+  <system.webServer>
+    <security>
+      <requestFiltering>
+        <requestLimits maxAllowedContentLength="1073741824" />
+      </requestFiltering>
+    </security>
+    <validation validateIntegratedModeConfiguration="false" />
+    <handlers>
+      <add name="ReportViewerWebControlHandler" preCondition="integratedMode" verb="*" path="Reserved.ReportViewerWebControl.axd" type="Microsoft.Reporting.WebForms.HttpHandler, Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    </handlers>
+  </system.webServer>
+  <system.web>
+    <httpHandlers>
+      <add path="Reserved.ReportViewerWebControl.axd" verb="*" type="Microsoft.Reporting.WebForms.HttpHandler, Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" validate="false" />
+    </httpHandlers>
+    <httpRuntime maxRequestLength="1048576" />
+    <!-- Show detail errors. Comment out in production -->
+    <customErrors mode="Off" />
+    <!-- Change to debug="false" for production -->
+    <compilation debug="true" targetFramework="4.5">
+      <buildProviders>
+        <add extension=".rdlc" type="Microsoft.Reporting.RdlBuildProvider, Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+      </buildProviders>
+    </compilation>
+    <sessionState mode="InProc" />
+    <pages>
+      <!--<namespaces>
+        <add namespace="System.Web.Optimization" />
+        <add namespace="Microsoft.AspNet.Identity" />
+      </namespaces>-->
+      <controls>
+        <!--<add assembly="Microsoft.AspNet.Web.Optimization.WebForms" namespace="Microsoft.AspNet.Web.Optimization.WebForms" tagPrefix="webopt" />-->
+        <add tagPrefix="act" namespace="AjaxControlToolkit" assembly="AjaxControlToolkit" />
+        <add tagPrefix="rsweb" namespace="Microsoft.Reporting.WebForms" assembly="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91, processorArchitecture=MSIL" />
+        <add tagPrefix="sos" tagName="TitleBar" src="~/Modules/Core/Controls/TitleBar.ascx" />
+        <add tagPrefix="sos" tagName="ErrorMessage" src="~/Modules/Core/Controls/ErrorMessage.ascx" />
+        <add tagPrefix="sos" tagName="MainMenu" src="~/Modules/Core/Controls/MainMenu.ascx" />
+        <add tagPrefix="sos" tagName="BooleanViewer" src="~/Modules/Core/Controls/BooleanViewer.ascx" />
+        <add tagPrefix="sos" tagName="BooleanReader" src="~/Modules/Core/Controls/BooleanReader.ascx" />
+        <add tagPrefix="sos" tagName="FileLabel" src="~/Modules/Core/Controls/FileLabel.ascx" />
+        <add tagPrefix="sos" tagName="FileLink" src="~/Modules/Core/Controls/FileLink.ascx" />
+        <add tagPrefix="sos" tagName="FileSelect" src="~/Modules/Core/Controls/FileSelect.ascx" />
+        <add tagPrefix="sos" tagName="GridPageSize" src="~/Modules/Core/Controls/GridPageSize.ascx" />
+        <add tagPrefix="sos" tagName="CheckComparison" src="~/Modules/Projects/Controls/ComparisonCheck.ascx" />
+        <add tagPrefix="sos" tagName="ViewComparison" src="~/Modules/Projects/Controls/ComparisonView.ascx" />
+        <add tagPrefix="sos" tagName="EditComparison" src="~/Modules/Projects/Controls/ComparisonEdit.ascx" />
+        <add tagPrefix="sos" tagName="ViewQuoteDrawings" src="~/Modules/Projects/Controls/QuoteDrawingsView.ascx" />
+        <add tagPrefix="ajaxToolkit" assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" />
+      </controls>
+    </pages>
+    <membership>
+      <providers>
+        <!--
+	      ASP.NET Membership is disabled in this template. Please visit the following link http://go.microsoft.com/fwlink/?LinkId=301889 to learn about the ASP.NET Membership support in this template
+        -->
+        <clear />
+      </providers>
+    </membership>
+    <profile>
+      <providers>
+        <!--
+	      ASP.NET Membership Profile is disabled in this template. Please visit the following link http://go.microsoft.com/fwlink/?LinkId=301889 to learn about the ASP.NET Membership support in this template
+        -->
+        <clear />
+      </providers>
+    </profile>
+    <roleManager>
+      <!--
+	        ASP.NET Membership Role is disabled in this template. Please visit the following link http://go.microsoft.com/fwlink/?LinkId=301889 to learn about the ASP.NET Membership support in this template
+        -->
+      <providers>
+        <clear />
+      </providers>
+    </roleManager>
+    <!--
+            If you are deploying to a cloud environment that has multiple web server instances,
+            you should change session state mode from "InProc" to "Custom". In addition,
+            change the connection string named "DefaultConnection" to connect to an instance
+            of SQL Server (including SQL Azure and SQL  Compact) instead of to SQL Server Express.
+      -->
+    <!--<sessionState mode="InProc" customProvider="DefaultSessionProvider">
+      <providers>
+        <add name="DefaultSessionProvider" type="System.Web.Providers.DefaultSessionStateProvider, System.Web.Providers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" connectionStringName="DefaultConnection" />
+      </providers>
+    </sessionState>-->
+  </system.web>
+  <system.serviceModel>
+    <client>
+      <endpoint address="http://VC-SOS-03:8080/FileTransferService.svc" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IFileTransferService" contract="IFileTransferService" name="FileTransferService" />
+      <!--http://VC-SOS-02:8080/FileTransferService.svc      http://192.168.1.139:8080/FileTransferService.svc
+      VC-SOS-03:8080-->
+
+    </client>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="BasicHttpBinding_IFileTransferService" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:10:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferSize="67108864" maxBufferPoolSize="67108864" maxReceivedMessageSize="67108864" messageEncoding="Mtom" textEncoding="utf-8" transferMode="Streamed" useDefaultWebProxy="true">
+          <readerQuotas maxDepth="67108864" maxStringContentLength="67108864" maxArrayLength="67108864" maxBytesPerRead="67108864" maxNameTableCharCount="67108864" />
+          <security mode="None">
+            <transport clientCredentialType="None" proxyCredentialType="None" realm="" />
+            <message clientCredentialType="UserName" algorithmSuite="Default" />
+          </security>
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+  </system.serviceModel>
+  <!--San to run  MP4  Videos-->
+  <!--<staticContent>
+      <mimeMap fileExtension=".mp4" mimeType="video/mp4" />
+      <mimeMap fileExtension=".m4v" mimeType="video/m4v" />
+    </staticContent>-->
+  <!--San to run  Videos-->
+</configuration>

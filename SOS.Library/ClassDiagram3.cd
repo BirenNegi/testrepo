@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SOS.Core.ContractsController" Collapsed="true">
+    <Position X="0.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>luDxtuuYqlUCIa+temGNYi3TllXkCbnZK+WoQ84q9ug=</HashCode>
+      <FileName>Core\Controller\ContractsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.Controller" Collapsed="true">
+    <Position X="6" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Core\Controller\Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.PeopleController" Collapsed="true">
+    <Position X="2.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AADBJQQAAAgIAACEAAAAAQQABABRIAAAAAAAAAiBBEI=</HashCode>
+      <FileName>Core\Controller\PeopleController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ProcessController" Collapsed="true">
+    <Position X="5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AWCoYABkgCofQEviChTAAkLTBohgx2FQAwqkaDAfIoA=</HashCode>
+      <FileName>Core\Controller\ProcessController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ProjectsController" Collapsed="true">
+    <Position X="7.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>67rztzzfn6u82pc+e46Ic139tpD2+m/a2sXO089L5eU=</HashCode>
+      <FileName>Core\Controller\ProjectsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.SubContractorsController" Collapsed="true">
+    <Position X="9.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCBAAAAAAAoAAAgAEAAAQAgAJABAAAAAAAAIAARAAAQ=</HashCode>
+      <FileName>Core\Controller\SubContractorsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.TradesController" Collapsed="true">
+    <Position X="11.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>6W/Gdu+4P2X3qNoAOHBCDS9eZEVugTbNKLUmUf7pKec=</HashCode>
+      <FileName>Core\Controller\TradesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.AddendumInfo" Collapsed="true">
+    <Position X="13.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAgAAAAAEAAAAQAAAAAAAIAAAAgABAAAAA=</HashCode>
+      <FileName>Core\Info\AddendumInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SOS.Core.AttachmentInfo" Collapsed="true">
+    <Position X="15.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KgAAAAAAAAAgAAAAAAAAAAQAgAAEAAAAAABgAIAAAgA=</HashCode>
+      <FileName>Core\Info\AttachmentInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.AttachmentsGroupInfo" Collapsed="true">
+    <Position X="2.75" Y="6" Width="1.5" />
+    <InheritanceLine Type="SOS.Core.Info" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="1.562" />
+        <Point X="9" Y="5.625" />
+        <Point X="3.5" Y="5.625" />
+        <Point X="3.5" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Core\Info\AttachmentsGroupInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.BudgetInfo" Collapsed="true">
+    <Position X="7" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAJAAEAAxIAgCASAKBgEgAMAAAAAAAAAAAM=</HashCode>
+      <FileName>Core\Info\BudgetInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SOS.Core.BusinessUnitInfo" Collapsed="true">
+    <Position X="5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBEAKRABAAQAIAAIACAAACQBAAgEAQAAAAEAAAAQARk=</HashCode>
+      <FileName>Core\Info\BusinessUnitInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ClaimInfo" Collapsed="true">
+    <Position X="9.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DEAQISQECAAQQKIAOkUACCoAAAhhYEgCYRYOEAAAIAA=</HashCode>
+      <FileName>Core\Info\ClaimInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ClaimTradeInfo" Collapsed="true">
+    <Position X="15.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAIAAAAAAABIgCAAAAIgAAAAAAAAAAAACA=</HashCode>
+      <FileName>Core\Info\ClaimTradeInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SOS.Core.ClaimVariationInfo" Collapsed="true">
+    <Position X="16" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIRAAIBAIAAAAAAACAACAAAAAgAAAAAAAAAgAACA=</HashCode>
+      <FileName>Core\Info\ClaimVariationInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SOS.Core.ClientContactInfo" Collapsed="true">
+    <Position X="11.25" Y="13.25" Width="1.5" />
+    <InheritanceLine Type="SOS.Core.PeopleInfo" ManuallyRouted="true">
+      <Path>
+        <Point X="9" Y="12.441" />
+        <Point X="9" Y="12.896" />
+        <Point X="12" Y="12.896" />
+        <Point X="12" Y="13.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AcBBQgAAAAACFAAQECAAAQAAAQIDAIgAB1CBAAFAAUA=</HashCode>
+      <FileName>Core\Info\ClientContactInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ClientTradeInfo" Collapsed="true">
+    <Position X="9.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAMAAEACAAAAAAAACASAAAgEgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Info\ClientTradeInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SOS.Core.ClientTradeTypeInfo" Collapsed="true">
+    <Position X="5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Info\ClientTradeTypeInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ClientVariationInfo" Collapsed="true">
+    <Position X="2.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MKogIjEUCSFTSKIUy0wAGCcAAwknIEIiEYIIE2CAIAQ=</HashCode>
+      <FileName>Core\Info\ClientVariationInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ClientVariationItemInfo" Collapsed="true">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAoAAAAIAAAAACAAAAAgAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Core\Info\ClientVariationItemInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ClientVariationTradeInfo" Collapsed="true">
+    <Position X="7.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAUAAAAJIAAAAxIAACACACAAAgAMAAAAAAAgAAAM=</HashCode>
+      <FileName>Core\Info\ClientVariationTradeInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SOS.Core.ContactInfo" Collapsed="true">
+    <Position X="8.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAIAAACCAA=</HashCode>
+      <FileName>Core\Info\ContactInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ContractInfo" Collapsed="true">
+    <Position X="13.5" Y="4.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QIAokBAyCmCw4MFQokABgDKEBqEpIB4CoUKAIFDCsDA=</HashCode>
+      <FileName>Core\Info\ContractInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ContractModificationInfo" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAggIAAIACAAAAAAAAAAIAAAACAA=</HashCode>
+      <FileName>Core\Info\ContractModificationInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ContractTemplateInfo" Collapsed="true">
+    <Position X="14" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iIIAAAAAAAAAAAAACAAACAIAAIgAAAACAACAAgAAAAA=</HashCode>
+      <FileName>Core\Info\ContractTemplateInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.DrawingInfo" Collapsed="true">
+    <Position X="11.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACQIgAAEAAggAQAJIAECAQAAggEAFIgAAEAQAAAACA=</HashCode>
+      <FileName>Core\Info\DrawingInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.DrawingRevisionInfo" Collapsed="true">
+    <Position X="7.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAQAAAAEAAACAAAAAEAAAghAAAIIAAIAA=</HashCode>
+      <FileName>Core\Info\DrawingRevisionInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.DrawingTypeInfo" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAQAAAAEAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Info\DrawingTypeInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.EmployeeInfo" Collapsed="true">
+    <Position X="5.25" Y="13.25" Width="1.75" />
+    <InheritanceLine Type="SOS.Core.PeopleInfo" ManuallyRouted="true">
+      <Path>
+        <Point X="9" Y="12.441" />
+        <Point X="9" Y="12.87" />
+        <Point X="6.125" Y="12.87" />
+        <Point X="6.125" Y="13.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAGEAAAACQBIAAgEAAANBAAAgUAAAAKAAAACgECAAA=</HashCode>
+      <FileName>Core\Info\EmployeeInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.EOTInfo" Collapsed="true">
+    <Position X="2.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAEAQAAQCAAAEAACAAwIAAgAAQAAUAAAEEFAAI=</HashCode>
+      <FileName>Core\Info\EOTInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.Info" Collapsed="true">
+    <Position X="8.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAACCQAAAAAAAAQAkACCAAAAIgABAIIAA0AAAAICAgk=</HashCode>
+      <FileName>Core\Info\Info.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.362" />
+  </Class>
+  <Class Name="SOS.Core.InvitationTemplateInfo" Collapsed="true">
+    <Position X="11.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Info\InvitationTemplateInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.JobTypeInfo" Collapsed="true">
+    <Position X="2.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Info\JobTypeInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.MinutesTemplateInfo" Collapsed="true">
+    <Position X="6.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Info\MinutesTemplateInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ParticipationItemInfo" Collapsed="true">
+    <Position X="9.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAAEAAAABABIAAAAQCAAAAAgACIAAAggAAAIAA=</HashCode>
+      <FileName>Core\Info\ParticipationItemInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.PeopleInfo" Collapsed="true">
+    <Position X="7.25" Y="11.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AICADUAAgChAAAAoIACAICQCgAAACgCmAAoQrgAQEAk=</HashCode>
+      <FileName>Core\Info\PeopleInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ProcessInfo" Collapsed="true">
+    <Position X="2.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QADBAAAhgYEAIBAAEAAAGBQAlAwkACAgABAAAAAAgAA=</HashCode>
+      <FileName>Core\Info\ProcessInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ProcessStepInfo" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>K02mgEMlgAAAgAAAUgrSIBYAwAAkAgSSBJCRgAgAOVQ=</HashCode>
+      <FileName>Core\Info\ProcessStepInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ProcessTemplateInfo" Collapsed="true">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAABAAAAAQABAACAAAAQQAAAAEAAAAQAAEAAAAAAA=</HashCode>
+      <FileName>Core\Info\ProcessTemplateInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ProjectInfo" Collapsed="true">
+    <Position X="7" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>81/fLWRdrv5s5Bp6qFKduDW5qhv8K+532ke6PrOtui8=</HashCode>
+      <FileName>Core\Info\ProjectInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ReversalInfo" Collapsed="true">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAABBIAQAQSAAAAEAAAAAAIAgCACAIAgAAAAEAAAA=</HashCode>
+      <FileName>Core\Info\ReversalInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.RFIInfo" Collapsed="true">
+    <Position X="4.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEABIgAAAAAMEACAAAAgCBAEAAAAIGAgAAgAg=</HashCode>
+      <FileName>Core\Info\RFIInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.SeparateAccountInfo" Collapsed="true">
+    <Position X="2.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAQBRAEAAQEAAAgCgAgAACAAAAAAACACABAgQAAACE=</HashCode>
+      <FileName>Core\Info\SeparateAccountInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.SubContractorInfo" Collapsed="true">
+    <Position X="15.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FACiRESAiBCAgAhAoICQkKQAgAAEAoCmQAKC5hAAIEA=</HashCode>
+      <FileName>Core\Info\SubContractorInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.TradeBudgetInfo" Collapsed="true">
+    <Position X="0.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAgEAAAAJAAAAAxIAACACACgAAACMAACAAAAAAAAM=</HashCode>
+      <FileName>Core\Info\TradeBudgetInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SOS.Core.TradeInfo" Collapsed="true">
+    <Position X="11.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>HIJ60RzJFHEwyKBAapQgSgaUIykPFmMAUGwKGBLsLsg=</HashCode>
+      <FileName>Core\Info\TradeInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SOS.Core.TradeItemCategoryInfo" Collapsed="true">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAASAAAAEgAAAAAAAAAAAQCAgAkAgIAAAAAAAAAAAg=</HashCode>
+      <FileName>Core\Info\TradeItemCategoryInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SOS.Core.TradeItemInfo" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgQAAAAkAAACIBAAggAUyAAAAUgACAEAAQgAgAMAA=</HashCode>
+      <FileName>Core\Info\TradeItemInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SOS.Core.TradeParticipationInfo" Collapsed="true">
+    <Position X="9.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAZlZIQEAUTKUAJCygAJYCyAEgEAgkIBABAIJCAULCI=</HashCode>
+      <FileName>Core\Info\TradeParticipationInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.TradeTemplateInfo" Collapsed="true">
+    <Position X="0.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAgAQAAAAEiAAgAABAoBAAAAAAAAAAE=</HashCode>
+      <FileName>Core\Info\TradeTemplateInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.TransmittalInfo" Collapsed="true">
+    <Position X="4.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JINgoCZAQCggAAAAKARgSQwAAEmABAAACAAgSABCaIA=</HashCode>
+      <FileName>Core\Info\TransmittalInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.TransmittalRevisionInfo" Collapsed="true">
+    <Position X="11.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAEAEAAAAAAgAAAAACEAAEBAAAhgAAAAEICiACA=</HashCode>
+      <FileName>Core\Info\TransmittalRevisionInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.VariationInfo" Collapsed="true">
+    <Position X="13.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIQAgVQAAAJkQAAF5MAAyACACgkQgAMAAAAoAAAECAM=</HashCode>
+      <FileName>Core\Info\VariationInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SOS.Core.Instrumentation" Collapsed="true">
+    <Position X="8" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAMAAAAAAAAAAIIAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Core\Instrumentation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ProcessStatus" Collapsed="true">
+    <Position X="2.75" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQAhIAICABAAABAAAIAAAACAAAAAAACAABAAAAEEAAA=</HashCode>
+      <FileName>Core\ProcessStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.Security" Collapsed="true">
+    <Position X="6.25" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAQAAAAAQAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Security.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.SecurityException" Collapsed="true">
+    <Position X="8" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\SecurityException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.SessionException" Collapsed="true">
+    <Position X="1" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\SessionException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.BudgetComparer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Core\Utilities\BudgetComparer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SOS.Core.Utils" Collapsed="true">
+    <Position X="8" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAEBAAAIAAAAAQAAYKAAIhQCAABABwAAAAKAAEA=</HashCode>
+      <FileName>Core\Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Data.DataProvider" Collapsed="true">
+    <Position X="6.25" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>m//+d+7H/2+9+9/de0t9927fvsT7+u+5+70cY/9Zrk0=</HashCode>
+      <FileName>Data\DataProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Data.Utils" Collapsed="true">
+    <Position X="1" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAoAAAAAAAAEAAAAAAAAAAAABAAAAAAAAAgA=</HashCode>
+      <FileName>Data\Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Reports.BidsChart" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAJBAAAAAAAAAAQACAAAAAEAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reports\BidsChart.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SOS.Reports.CompletedTask" Collapsed="true">
+    <Position X="4.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAOAAABAAAAAAAACAgAAAAAUAAAAAABAEAAAAAAAAA=</HashCode>
+      <FileName>Reports\CompletedTask.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Reports.PendingTask" Collapsed="true">
+    <Position X="1" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAKAAABAAAAAAAACAiAAAAAUAAAAAABAEAAAAAAAAA=</HashCode>
+      <FileName>Reports\PendingTask.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Reports.ProjectSnapshot" Collapsed="true">
+    <Position X="4.5" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAOAAABAAAAAAAACAgAAAAAUAAAAAABAEAAAAAAAAA=</HashCode>
+      <FileName>Reports\ProjectSnapshot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Reports.TaskTotal" Collapsed="true">
+    <Position X="4.5" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAKAAABAIIAMAAICCBAAAAAEACAAEAgAAGADARAAQA=</HashCode>
+      <FileName>Reports\TaskTotal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Reports.UserActivity" Collapsed="true">
+    <Position X="6.25" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAIAgACIAAEAgABAQIAAAAARAAQAAIUDA=</HashCode>
+      <FileName>Reports\UserActivity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Reports.WorkOrder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sAAAgAQIABgACQQBOAAAIAGEBCoIAAAAAAAIICACAgE=</HashCode>
+      <FileName>Reports\WorkOrder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SOS.UI.Utils" Collapsed="true">
+    <Position X="2.75" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CKAEAAAAAAgABAJEAkAAIEAgCIpIgAALIMIAJARBAwQ=</HashCode>
+      <FileName>UI\Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Web.SOSPage" Collapsed="true">
+    <Position X="2.75" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACACAAAAAAAAABAAAAAAAAAAQAAAAABAAQAAA=</HashCode>
+      <FileName>Web\SOSPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Web.Utils" Collapsed="true">
+    <Position X="4.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KIAAJYAAQACIJiwBsADCAAAEgEgAAIgBEAACAACIgIA=</HashCode>
+      <FileName>Web\Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ContractApprovalLimitInfo" Collapsed="true">
+    <Position X="4.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAABAACAAAEAAAAAAAAAQAQAAAAAAAAAAEIAA=</HashCode>
+      <FileName>Core\Info\ContractApprovalLimitInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.KPIRangeInfo" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAgAAAAAQAACABgCAAAAA=</HashCode>
+      <FileName>Core\Info\KPIRangeInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.KPIPointsInfo" Collapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAgAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Core\Info\KPIRangeInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.MeetingMinutesInfo" Collapsed="true">
+    <Position X="15.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAgAAAAAMIADAAABAAAAAAAAAIAAAAAAAg=</HashCode>
+      <FileName>Core\Info\MeetingMinutesInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.ProjectImage" Collapsed="true">
+    <Position X="11.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABABAAAAAAACAAAAIAABAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Info\ProjectImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.RFIsResponseInfo" Collapsed="true">
+    <Position X="14" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACIAAAAAAAAAAAEAAAAAAAAAAAgAABAAAAAA=</HashCode>
+      <FileName>Core\Info\RFIsResponseInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOS.Core.RFIsResponseAttachmentInfo" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <InheritanceLine Type="SOS.Core.Info" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="1.562" />
+        <Point X="9" Y="2.125" />
+        <Point X="10.181" Y="2.125" Type="JumpStart" />
+        <Point X="10.348" Y="2.125" Type="JumpEnd" />
+        <Point X="12.312" Y="2.125" />
+        <Point X="12.312" Y="2.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAIAEAAAAAAAAAAAAEAAABAAAA=</HashCode>
+      <FileName>Core\Info\RFIsResponseInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SOS.Core.IBudget" Collapsed="true">
+    <Position X="1" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAJAAAAAxIAACAAACAAAAAMAAAAAAAAAAAM=</HashCode>
+      <FileName>Core\Interfaces\IBudget.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SOS.Core.IClaimDetail" Collapsed="true">
+    <Position X="2.75" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Interfaces\IClaimDetail.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SOS.Core.IDocumentable" Collapsed="true">
+    <Position X="4.5" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Core\Interfaces\IDocumentable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SOS.Core.ISortable" Collapsed="true">
+    <Position X="6.25" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Interfaces\ISortable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="SOS.Core.BudgetType" Collapsed="true">
+    <Position X="1" Y="25.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAACAAAAIAAAAAAAAAAAAAAAAAAAAAIAAIAAAAAAA=</HashCode>
+      <FileName>Core\Info\BudgetInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
